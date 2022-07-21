@@ -1,0 +1,239 @@
+    1  ssh-keygen
+    2  cd
+    3  keygen
+    4  cd ~/.ssh
+    5  .ssg
+    6  .ssh
+    7  cd
+    8  ls
+    9  ssh-keygen
+   10  cd
+   11  cd~/.ssh
+   12  .ssg
+   13  .ssh
+   14  cd .ssh
+   15  pwd
+   16  ls
+   17  ls
+   18  pwd
+   19  cs
+   20  clear
+   21  cl
+   22  cle
+   23  clea
+   24  clear
+   25  ls
+   26  id_rsa
+   27  cd /id_rsa
+   28  cd id_rsa
+   29  ls id_rsa
+   30  pwd
+   31  /id_rsa
+   32  clear
+   33  ls
+   34  help
+   35  ls
+   36  read id_rsa
+   37  help
+   38  clear
+   39  ls
+   40  help
+   41  cat help
+   42  help cat
+   43  clear
+   44  ls
+   45  cat id_rsa.pub
+   46  clear
+   47  ls
+   48  cat id_rsa
+   49  cat id_rsa.pub
+   50  cler
+   51  ssh
+   52  ls
+   53  ls
+   54  pwd
+   55  pwd
+   56  git clone https://github.com/aaron0096/WileyEdgeSRE.git
+   57  git clone https://github.com/aaron0096/WileyEdgeSRE.git
+   58  pwd
+   59  ls
+   60  cd wileyedgesre
+   61  pwd
+   62  uiu
+   63  vi
+   64  vim testing
+   65  vim testing
+   66  git add .
+   67  git commit -am "my first commit"
+   68  git push
+   69  git config --global user.email "aaron_low@msn.com"
+   70  git config --global user.name "Aaron Low"
+   71  git push
+   72  ls
+   73  cd ..
+   74  ls
+   75  cd WileyEdgeSRE
+   76  ls
+   77  git add .
+   78  git commit -am "my first commit"
+   79  git push
+   80  cd ..
+   81  cd WESRE
+   82  git push
+   83  git status
+   84  git push
+   85  git remove add origin 
+   86  git remote add origin 
+   87* 
+   88  git remote add origin https://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@github.com/aaron0096/WESRE
+   89  git remote add origin https://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@github.com/aaron0096/WESRE.git
+   90  git pull
+   91  ls
+   92  git push
+   93  man touch
+   94  touch man
+   95  man
+   96  manual
+   97  help
+   98  help touch
+   99  man man
+  100  ls
+  101  untouch man
+  102  touch -d man
+  103  help
+  104  ;
+  105  help touch
+  106  info touch
+  107  man -k touch
+  108  help help
+  109  rm man
+  110  ls
+  111  pwd
+  112  cd
+  113  pwd
+  114  cd /
+  115  pwd
+  116  cd
+  117  pwd
+  118  ls
+  119  pwd
+  120  cd WESRE
+  121  pwd
+  122  pwd
+  123  mkdir Algo1
+  124  ls
+  125  cd Algo1
+  126  ls
+  127  mkdir config bin logs scripts
+  128  ls
+  129  cd config
+  130  touch config.config variables
+  131  ls
+  132  cs ..
+  133  cd ..
+  134  ls
+  135  ls
+  136   cd scripts
+  137  touch start.sh stop.sh admin.sh
+  138  ls
+  139  cd ..
+  140  cd logs
+  141  touch today.log
+  142  pwd
+  143  ls
+  144  cd /WESRE
+  145  cd
+  146  cd /WESRE
+  147  cd WESRE
+  148  ls
+  149  ls -l -r
+  150  ls -l
+  151  cd Algo1
+  152  ls -l
+  153  man ls
+  154  ls -a -l
+  155  ls -l -d
+  156  ls -l
+  157  ls -l -R
+  158  ls -l -R | less
+  159  ls
+  160  cd config
+  161  ls
+  162  rm variables
+  163  ls
+  164  cd ..
+  165  ls
+  166  rm -r bin
+  167  ls
+  168  ls
+  169  mkdir bin
+  170  ls
+  171  cd logs
+  172  ls
+  173  mkdir oldlogs
+  174  ls
+  175  cd oldlogs
+  176  mkdir 2019 2018 2017
+  177  cd 2017
+  178  touch 2017.log
+  179  ls
+  180  cd ..
+  181  cd 2018
+  182  touch 2018.log
+  183  cd ..
+  184  cd 2019
+  185  touch 2019.log
+  186  cd ..
+  187  ls -R
+  188  ls
+  189  cd ..
+  190  ls
+  191  cd ..
+  192  ls
+  193  rm logs/oldlogs
+  194  rm -r logs/oldlogs
+  195  ls
+  196  ls -r logs
+  197  find .sh
+  198  find log
+  199  find logs 
+  200  find -regex .sh
+  201  find -regex '.sh'
+  202  cd ..
+  203  find -regex '.sh'
+  204  find -regex 'log'
+  205  find -regex 'logs'
+  206  find -regex logs
+  207  find logs
+  208  ls
+  209* 
+  210  man find
+  211  help find
+  212  info find
+  213  find / -name .sh
+  214  find /WESRE -name .sh
+  215  find WESRE -name .sh
+  216  find -name .sh
+  217  find *.sh
+  218  find  *.sh
+  219  ls
+  220  find -iname *.sh
+  221  find -name *.sh
+  222  find -name .sh
+  223  find -name *.sh
+  224  ls
+  225  cd algo1/scripts
+  226  ls
+  227  rm s*.sh
+  228  ls
+  229  cd
+  230  ls
+  231  cd wesre
+  232  ls
+  233  history > Aaron.220721.module3
+  234  ls
+  235  git push
+  236  rmdir algo1
+  237  rm -r algo1
+  238  ls
+  239  history > Aaron.220721.module3
