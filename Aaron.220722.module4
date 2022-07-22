@@ -31,5 +31,16 @@ echo $CMD
 #Using echo and the variable CMD, print what the CMD returns when run to the screen
 echo `$CMD`
 
+#Change directory to your home directory
+cd 
+
+#Create a directory named scripts
+mkdir scripts
+
+#Print out your $PATH Value
+pwd
+
+#Append your newly created script directory to your path variable
+export PATH=$PATH:~/script
 
 
