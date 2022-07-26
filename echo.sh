@@ -1,9 +1,9 @@
 #!/bin/bash
 
-function echo()
-{
-a=$1	
-echo '$a'
+function echousr()
+{		
+echo $x $x
 }
 
-echo 'HEEEEELLLO'
+read -p "This echos what you type: " x
+echousr $x
