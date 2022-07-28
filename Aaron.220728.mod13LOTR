@@ -1,0 +1,24 @@
+#Do a case-insensitive search of the file for hobbit and output the results to the screen.
+grep -i hobbit LOTR.txt | less
+
+#Put the first eight lines and the last three lines into a new file named LOTRtxt.
+head -8 LOTR.txt >  LOTRtxt
+tail -3 LOTR.txt >> LOTRtxt
+
+#Run a command on the command line to replace all occurrences of Gollum with Thanos and output the results into a new file named LOTRMarvel.txt.
+sed 's/Gollum/Thanos/g' LOTR.txt > LOTRMarvel.txt
+
+#On the command line, run a command to compare the LOTR.txt with LOTRMarvel.txt.
+diff LOTR.txt LOTRMarvel.txt
+
+#Change the permission on LOTR.txt so that it is read and executable for others and group, and fully accessible for the current user.
+chmod 755 LOTR.txt
+
+#Count the number of words in LOTR.txt.
+wc LOTR.txt
+
+#Rename the LOTR.txt file to LordOfTheRings.txt.
+mv LOTR.txt LordOfTheRings.txt
+
+#Create a compressed tarball named LOTR.tar.gz that includes all the files you have created in this set of exercises.
+tar -cvzf LOTR.tar.gz LOTR.txt LordOfTheRings.txt Aaron.220728*
