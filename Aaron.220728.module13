@@ -29,3 +29,4 @@
 0 6,8 * * 6,0 ~/fixGenerator.sh
 
 #Copy the contents of your crontab into a file named crontab.yourname.module13 and place the file in the directory specified by your instructor.
+crontab -1 > crontab.Aaron.module13
