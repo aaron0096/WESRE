@@ -1,0 +1,18 @@
+#Create a file named seq1.txt and write a sentence of your choice in it.
+vi seq1.txt
+
+#Create a file named seq2.txt and write a sentence of your choice in it.
+vi seq2.txt
+
+#Create a file named seq3.txt and write a sentence of your choice in it.
+vi seq3.txt
+
+#Generate a list of these files and add the list to another file named list.txt.
+ls seq*.txt > list.txt
+
+#Use a single command to copy the contents of all files with seq in the name into a file named total.txt.
+cat seq*.txt >> total.txt
+
+#Write a single command that shows how many files you have in your current directory.
+ls -l | head -1
+
