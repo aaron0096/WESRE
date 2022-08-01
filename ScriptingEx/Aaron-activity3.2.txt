@@ -1,0 +1,42 @@
+#!/bin/bash
+
+file="lottery.`date +'%Y%m%d'`"
+if [ ! -f $file ] ; then
+	echo "Today's lottery (lottery.`date +'%Y%m%d'`) does not exist. Please roll lottery numbers."
+        exit 0
+fi
+
+read -p "What are your 5 numbers? Seperate by space between 1 and 50 inclusive. " a b c d e
+#echo $a $b $c $d $e
+
+
+if [ -z "$e" ] ; then
+	echo 'Please input exactly 5 numbers, try again.'
+	exit 0 
+
+elif    [ $a = $b ] || [ $a = $c ] || [ $a = $d ] || [ $a = $e ] \
+     || [ $b = $c ] || [ $b = $d ] || [ $b = $e ] \
+     || [ $c = $d ] || [ $c = $e ] \
+     || [ $d = $e ]  ; then
+    	echo 'Number cannot be repeated, please try again.'
+	exit 0
+fi
+
+for i in $a $b $c $d $e; do
+	if [ $i -lt 1 ] || [ $i -gt 50 ]
+	then
+		echo 'Number is out of range, please try again.'
+		exit 0
+	fi
+done
+
+count=0
+for i in $a $b $c $d $e; do
+	a=`grep -w $i $file | head -1`	
+	if [[ $a == $i ]] ; then
+		echo "Number $i matches!"
+		count=$(($count + 1))
+	fi
+done
+
+echo "You have $count number of matches."

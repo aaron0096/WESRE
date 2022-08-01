@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Username = `whoami`"
+echo "Current date is `date +'Year:%Y Month:%m Day:%d %A'`"
+echo "Current time is `date +'%H:%M:%S'`"
+echo "Directory: `pwd`"
+echo "files = `ls -l | head -1`"
+echo "Largest file = `ls -S | head -1`"

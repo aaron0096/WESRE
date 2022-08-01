@@ -1,0 +1,8 @@
+#!/bin/bash/
+
+
+a=`diff $1 $2 | grep "^<" | sed 's/<\ //g'`
+b=`diff $1 $2 | grep "^>" | sed 's/>\ //g'`
+
+echo -e "Only in file 1:\n$a\n"
+echo -e "Only in file 2:\n$b"

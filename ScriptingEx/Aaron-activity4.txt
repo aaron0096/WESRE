@@ -1,0 +1,19 @@
+#!/bin/bash
+
+read -p "Please input your password for testing: " pw
+word_count=`echo -n $pw | wc -m`
+
+if [ $word_count -lt 8 ] ; then a="has less than 8 characters, " ; fi
+
+if ! [[ "$pw" =~ [A-Z] ]] ; then b="has no capitalized letters, " ; fi
+
+if ! [[ "$pw" =~ [a-z] ]] ; then c="has no small letters, " ; fi
+
+if ! [[ "$pw" =~ [0-9] ]] ; then d="has no numbers, " ; fi
+
+if [ -n "$a" ] || [ -n "$b" ] || [ -n "$c" ] || [ -n "$d" ] ; then
+	echo "Password $a$b$c$d""please try again."
+else    echo "Your password's fine."
+fi
+
+	

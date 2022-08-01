@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Please enter two different numbers." 
+read -p "First number : " a
+read -p "Second number: " b
+
+if [[ $a =~ [[:alpha:]] ]] || [[ $b =~ [[:alpha:]] ]] ; then
+	echo "Please enter only numbers and not letters." ; exit 0
+elif [ -z "$a" ] || [ -z "$b" ] ; then
+	echo "Please enter two inputs." ; exit 0
+fi
+
+
+if [[ $a -gt $b ]] ; then
+	echo "True that $a is bigger than $b."
+else 
+	echo "False that $a is bigger than $b."
+fi
+
+c=$(( $a - $b ))
+echo "The difference between the two numbers is $c."

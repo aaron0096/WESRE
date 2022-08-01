@@ -1,0 +1,39 @@
+#!/bin/bash/
+
+if [ -z $1 ] || [ -z $2 ] ; then
+	echo "Please key in two filenames." ; exit 0 ; fi
+if ! [ -a $1 ] || ! [ -a $2 ] ; then
+	echo "Files $1 $2 does not exist." ; exit 0 ; fi
+
+declare -a arr1 arr2
+
+echo "file1= $1, file2= $2"
+
+arr1=( $(cat "./$1") )
+#arr2=( $(cat ./$2 | tr " " "\n" | sort -n) )
+#echo "Arr1 is ${arr1[@]}"
+
+count=0
+i=0
+while [[ $count -eq 0 ]] ; do
+	a=${arr1[$i]}
+	b=`grep -o " $a " $2 | head -1`
+	#echo "a = $a, b = $b, count = $count" #debug
+	i=$i+1
+
+	if [ -z $a ] ; then
+	break
+	fi
+	
+	if [[ " $a " == $b ]] ; then
+	#echo "$a is similar to $b" #debug
+	count=$(($count+1)) 
+	fi
+
+done 
+
+if [[ $count -eq 0 ]] ; then
+	echo "File has no similarities."
+elif [[ $count -gt 0 ]] ; then
+	echo "File has similarity."
+fi

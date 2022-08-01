@@ -1,0 +1,32 @@
+#!/bin/bash/
+
+declare -a words uqwords
+file=./booklist2
+words=( $(cat $file | tr " " "\n" | sort) ) 
+
+
+
+m=0
+n=${#words[@]}
+uqwords[0]=${words[0]}
+
+while [[ $m -lt $n ]] ; do
+	a=${words[$m]}
+	b=`grep -o " $a " ./booklist | head -1`
+	
+	
+	if [[ " $a " == $b ]] ; then
+		
+		m=$m+1
+		continue
+	elif ! [[ " $a " == $b ]] ; then
+		uqwords[$m]=$a
+	fi
+	m=$m+1	
+done
+
+echo "" > bookoutput.csv
+for i in ${uqwords[@]} ; do
+	count=`grep $i $file | wc -l`
+	echo "$i,$count" >> bookoutput.csv
+done

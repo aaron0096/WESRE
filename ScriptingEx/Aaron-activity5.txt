@@ -1,0 +1,17 @@
+#!/bin/bash
+
+read -p "Please input your number to reverse: " numbr
+
+if ! [[ "$numbr" =~ [0-9] ]] ; then echo "Input only numbers please." ; exit 0 ; fi 
+
+len=`echo -n $numbr | wc -m`
+
+i=0
+while [ $i -lt $len ] ; do
+	a=`echo -n $numbr | cut -c $len`
+	echo -n $a
+	#  b=$b$a
+	len=$(( $len - 1 ))
+done
+
+#  echo -e "\n$b"

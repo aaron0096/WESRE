@@ -1,0 +1,35 @@
+#!/bin/bash
+
+
+number=$((1 + $RANDOM % 50))
+echo $number > lottery.temp
+#echo "first number is `cat lottery.temp`"
+
+for i in {0..3}; do
+	number=$((1 + $RANDOM % 50))
+	a=`grep $number lottery.temp | head -1`
+
+	while [[ $a -eq $number ]] ; do
+		##echo "grep while $number same as $a"
+		number=$((1 + $RANDOM % 50))
+		a=`grep -w $number lottery.temp | head -1`
+		##echo "new number: $number $a"
+		done
+
+	echo $number >> lottery.temp
+done
+
+#powerball number
+number=$((1 + $RANDOM % 10))
+a=`grep -w $number lottery.temp | head -1`
+
+while [[ $a -eq $number ]] ; do
+	number=$((1 + $RANDOM % 10))
+	a=`grep -w $number lottery.temp | head -1`
+	done
+
+echo $number >> lottery.temp
+echo "Powerball number is $number" >> lottery.temp
+
+sort lottery.temp > lottery.`date +'%Y%m%d'`
+rm lottery.temp

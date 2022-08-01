@@ -1,0 +1,64 @@
+#!/bin/bash
+
+declare -a arrnum
+
+echo "Please input numbers. (min 5, max 10)"
+
+i=0
+while [[ $i -le 9 ]] ; do
+	if [[ $i -le 4 ]] ; then
+		read -p "Key in number $(($i+1)): " num
+		
+		if [[ "$num" =~ [[:alpha:][:space:]] ]] \
+		||  [ -z $num ]	; then
+			echo "Not a digit. Please try again."
+			continue ; fi
+		
+		arrnum[$i]=$num
+
+	elif [[ $i -ge 5 ]] ; then
+		read -p "Optional-Key in number $(($i+1)) or X to stop: " num
+		
+		if [[ "$num" =~ [[:space:]A-Wa-wYyZz] ]] \
+		||  [ -z $num ]	; then
+			echo "Not a digit or X. Please try again."
+			continue ; fi
+		
+		if [[ $num == "X" ]] ; then i=9
+		else arrnum[$i]=$num ; fi
+
+	fi
+	i=$(($i+1))
+done
+
+echo -n "The values you keyed in are: "
+for i in ${arrnum[@]}; do
+	echo -n "$i "
+done
+echo ""
+
+x=1
+y=0
+for i in ${arrnum[@]}; do
+#Multiplication
+	x=$(($x*$i))
+#Average and sum
+	y=$(($y+$i))
+	avg=$(($y/${#arrnum[@]}))
+done
+
+echo "Product = $x"
+echo "Average = $avg"
+echo "Sum = $y"
+
+#Min Max
+x=arrnum[0]
+y=arrnum[0]
+for i in ${arrnum[@]}; do
+	if ! [[ $x -lt $i ]] ; then
+	x=$i ; fi
+	if ! [[ $y -gt $i ]] ; then
+	y=$i ; fi
+done
+echo "Min = $x"
+echo "Max = $y"

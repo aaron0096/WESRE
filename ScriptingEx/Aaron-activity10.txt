@@ -1,0 +1,19 @@
+#!/bin/bash/
+
+if [ -z $1 ] || [ -z $2 ] ; then
+	echo "Please key in one input for filename and one for number of lines."
+	exit 0 ; fi
+
+if [ -a $1 ] ; then
+echo "File already exists. Error."
+exit 0
+
+else 
+touch $1 ; fi
+
+for i in $(seq 1 $2) ; do
+	number=$(( $RANDOM % 10 ))
+	echo $number >> $1
+done
+
+echo "File $1 created with $2 lines"

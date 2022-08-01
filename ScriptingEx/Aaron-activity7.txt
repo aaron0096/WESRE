@@ -1,0 +1,71 @@
+#!/bin/bash
+
+q1="For the same volume, coffee has more caffeine than tea."
+q1a="T"
+q1b="True, just the way it is."
+
+q2="Espresso tastes stronger than pourover."
+q2a="T"
+q2b="True, it's more strongly extracted."
+
+q3="You can drink more pourover (500ml, 25g coffee) than espresso (30ml, 10g coffee) because it has lesser caffeine."
+q3a="F"
+q3b="False, the input of coffee is important."
+
+q4="Good coffee beans makes the drink"
+q4a="T"
+q4b="True, rubbish in, rubbish out."
+
+q5="It is recommended to pre-ground coffee"
+q5a="F"
+q5b="False, the volatile compounds are lost very fast."
+
+q6="You can buy 'espresso grind' beans at the supermarket for your espresso machine at home"
+q6a="F"
+q6b="False, you will have a lot of trouble dialing in for espresso."
+
+q7="Mocha contains chocolate"
+q7a="T"
+q7b="True, it's a type of drink."
+
+q8="The Hario v60 is more unforgiving than the Kalita Wave"
+q8a="T"
+q8b="True, the cone shape of the v60 lets water flow through faster."
+
+q9="You can keep roasted beans for up to a month"
+q9a="T"
+q9b="True, it gets progressively stale and about a month it will taste dead."
+
+q10="Coffee greens can be kept above 3 months"
+q10a="T"
+q10b="True, recommended 6-9 months max or it will also lose freshness."
+
+i=1
+points=0
+while [[ $i -le 10 ]] ; do
+	qn=q$i
+	qn=${!qn}
+	echo "Question $i: $qn"
+	
+	unset ans
+	while ! [[ "$ans" =~ [TF] ]] ; do
+		read -p "True or False? 'T' or 'F' only: " ans
+	done
+	
+	qna=`echo q$i\a`
+	qna=${!qna}
+	if [[ $ans == $qna ]] ; then
+		echo -n "Correct! "
+		points=$(($points+1))
+	else echo -n "Wrong. "
+	fi
+	
+	qnb=`echo q$i\b`
+	qnb=${!qnb}
+	echo -e "Explanation: $qnb\n"
+
+	i=$(($i+1))
+done
+
+echo "You got a total of $points correct."
+

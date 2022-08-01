@@ -1,0 +1,12 @@
+#!/bin/bash/
+
+
+if [[ -a $1 ]] ; then
+	echo "File exists. Error 101."
+else 
+	echo "File does not exist. Creating file."
+	touch $1
+fi
+
+
+	

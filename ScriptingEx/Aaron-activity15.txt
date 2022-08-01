@@ -1,0 +1,27 @@
+#!/bin/bash/
+
+file="log.`date +%Y%m%d%H%M%S`"
+touch $file
+
+if ! [[ -d ./logs ]] ; then
+	echo "Logs directory does not exist. Creating directory." >> $file
+	mkdir ./logs
+fi
+
+
+cd logs
+count=`ls | wc -l`
+files=`ls -t | grep "log*" | tail -$(( $count-3 )) | sed 's/\n/ /g' `
+if [[ -a ./GenLogs.tar ]] ; then
+	tar -cf ./GenLogs.tar $files --remove-files
+else
+	tar -rf ./GenLogs.tar $files --remove-filesi
+fi
+echo "File $files have been tarred."
+echo "Now running fixgenerator.sh script."
+~/WESRE/fixgenerator.sh &
+cd ..
+
+
+# cron
+# 0 6 * * 1-5 ~/WESRE/fixgenerator.sh
