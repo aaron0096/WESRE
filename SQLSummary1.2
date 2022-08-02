@@ -1,0 +1,68 @@
+Relational Design and Normalization
+Data redundancy is having entries in a database which contains multiple pieces of the same information.
+If you combine student, student address and class table you will have a bigger table where each student has an individual entry for address plus their classes enrolled. 
+It's redundant, you don't need to pull that information every time you want to read the table.
+
+Having such a database as the main database can cause certain problems: Update anomaly, Insert anomaly, Delete anomaly.
+Update anomaly : e.g. for student A you noticed you keyed in the address wrongly in one row.
+                 You change that row, but miss out a few other rows. This is called update anomaly.
+Insert anomaly : You want to create a new class but it requires you to insert students and their address.
+                 If the class is not available yet, how to enroll students?
+Delete anomaly : In the opposite case, removing all the students effectively deletes the class. The class don't even have an option for taking in new students.
+
+Heap table -- Zero structure, all the data is dumped in there. Zero normalisation here.
+
+First normal form (1NF)  -- (1) There is no top-to-bottom ordering to the rows.
+                            (2) There is no left-to-right ordering to the columns.
+                            (3) Every row can be uniquely identified.
+                            (4) Every row/column intersection (field) contains only one value.
+                           
+(1) and (2) means that each row/column data is independent of each other. You can read one entry as its own without referencing another row/column.
+(3) means primary keys to identify the row must be unique
+(4) means no multiple entry of data in each row/column square.
+    E.g. a student with 2 phone numbers require 2 columns, one primary and one backup phone. No entry into one field of both.
+    
+Second normal form (2NF) -- (1) First normal form must already be achieved.
+                            (2) Columns need to be strictly related to each other.
+                            (3) Not repeat data across rows.
+
+(2) means that student and class are not strictly related to each other. Class and student can (and should) exist seperately.
+(3) data is repeated as there are many entries of the student's address.
+
+
+Third normal form (3NF)  -- (1) Second normal form must already be achieved.
+                            (2) no non-primary-key column is transitively dependent on the primary key.
+
+(2) is hard to understand. Example given is that in a student address table entry, they may live in Singapore blk20 with postal code 000020.
+The table entry has it's own primary key, running number from 1-infinity.
+But each row contains: id:1 studentA blk20 000020
+                       id:2 studentB blk20 000020
+
+Blk and postal are related on each other. But in this table they are also related to the entry ID.
+BLK relies on PK, and POSTAL relies on PK. Therefore transitively, BLK relies on POSTAL through PK.
+The problem here is if a student moves blks but the postal remains the same, there will be an update anomaly. 
+
+Denormalization
+Sometimes with large datasets, 3NF entries take very long to parse. Putting everything back into 1 single table like 1NF makes it much faster to run a query.
+
+
+
+Entity Relationship Diagrams
+An overview of your database.
+
+Tables: contain each table's columns that exist for that column, and any primary key or foreign key is indicated on the side.
+        The column's data entry type is also included, such as int, char(length), date, time, or some other format.
+        Not null or nullibility is indicated as well.
+
+Relations between tables: indicates the relationship between the foreign key and the primary key of a given table. A primary key must be unique and can be used
+                          to identify the rows in the table. Foreign keys don't necessarily have to be so.
+                          
+Some relations include 1-1, 1-many, many-many, or to-itself.
+
+The goals of an ERD is so you have an overview of your database. It makes visualisation of it much better. Furthermore, with a diagram, it allows you
+to plan the database accordingly and expand/restructure the database.
+
+
+
+
+
