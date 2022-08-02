@@ -1,1 +1,36 @@
+Introduction to Relational Databases 
+Database is a structured way to store data, information is split into tables, which is further split into columns with 1 entry being for 1 row.
+Some specifications are required for each column. They are: Unique/Non-uq ValueType(int,char,date,time) and whether they are Keys
 
+To identify a particular entry, it requires unique Primary Keys (PK); this sub-divided into 3 categories. 
+Natural key   = something like your national ID. It's already unique to the citizen in this country.
+Compound key  = two (or more) different columns which form unique combinations.
+Surrogate key = anything that is simply generated just to log the primary key. E.g. this could just be the natural numbers. (1,2,3...)
+
+Relational refers to that each table has a 'relation' with a different table. This is in the form of Foreign Keys (FK).
+This is so 1 entry in TableA can link to another entry in TableB. The FK is usually the PK of another table.
+
+There are 3+1 different catogories for relationships: 1-1, 1-Many, Many-Many
+The odd one out is that some tables link to themselves.
+The example given is that a manager is an employee as well, and manages others.
+So in the employee's table, his employeeID (PK) is the entry for others' managerID (FK) in a single row.
+
+
+ACID Compliance
+ACID acronym stands for Atomicity, Consistency, Isolation, Durability
+Overall this ensures the database is a robust system.
+
+Atomicity   = A transcation must be fully executed or it will be rescinded/reverted. No partial executions allowed.
+
+Consistency = The data must all be in the format specified by the columns. Furthermore, PKs must be unique, and FKs must refer to a valid PK.
+              When deleting rows where the PK is referenced by another table as a FK, the delete order may be rejected.
+              Another option is to 'Cascade Delete' which means all the related FKs are deleted as well but this is generally not good.
+
+Isolation   = In a database used by many users, a person adding data can be interrupted by someone trying to read the data.
+              Isolation means that while someone is adding data, no one can read the database until he finished his entry.
+              This prevents A) Errors while adding the data, and B) The person reading the data will not get an uncompleted result.
+
+Durability  = The data is stored in a 'durable' place, such as HDD or SSD -- the 'permanent memory' types.
+              Being stored on RAM is virtual memory, once the power is turned off you risk losing all the data you have entered.
+              
+              
