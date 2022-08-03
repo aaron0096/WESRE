@@ -34,7 +34,7 @@ WHERE BirthDate between "1980-01-01" and "1989-12-30";
 
 ##Write the query above in a different way.
 SELECT client.FirstName , client.LastName , client.BirthDate from `client`
-WHERE BirthDate > "1980-01-01" AND BirthDate < "1989-12-30";
+WHERE BirthDate >= "1980-01-01" AND BirthDate <= "1989-12-30";
 
 ##How many rows in the Login table have a .gov EmailAddress? (17 rows)
 SELECT count(*) from login
