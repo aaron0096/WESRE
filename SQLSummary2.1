@@ -1,0 +1,40 @@
+SQL Overview
+SQL uses certain syntax that if entered incorrectly will not give results. Not unlike other programming languages.
+However it's not so strict with certain things like tab indentation or capitalisation of words. You will still want to capitalise for easier reading for yourself.
+
+Select statement is shown as below.
+
+SELECT field1, field1, field3   ## Don't need brackets in this area or encounter error
+FROM table1
+WHERE criteria
+ORDER BY field1, field2;
+
+Semi-colon at the end means that the query ends here.
+Commas are used to seperate objects in a series.
+
+
+Creating a table syntax.
+
+CREATE TABLE `Client` (
+    ClientId CHAR(36) PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    BirthDate DATE NULL,
+    Address VARCHAR(256) NULL,
+    City VARCHAR(100) NULL,
+    StateAbbr CHAR(2) NULL,
+    PostalCode VARCHAR(10) NULL,
+    FOREIGN KEY fk_Client_StateAbbr (StateAbbr)
+        REFERENCES State(StateAbbr)
+);
+
+
+Spaces ususally not used in column names. If it is used, it requires quotation marks (just makes it harder to refer to the columns).
+
+One more example from Engage.
+SELECT FirstName, LastName, Address  
+FROM Client
+WHERE LastName in ("Smith","Lee");  ## Brackets accepted here
+
+
+Null Values
