@@ -48,5 +48,5 @@ sorting by keys can be done easier by sending the keys to a list, sorting the li
 sorting by values are harder...
 dict.item() returns the values in a list, and you have to use the sorted() function as well as lambda function thing as so:
 
-sorted_dict = unsorted_dict ( sorted( unsorted_dict.items(),key = lambda item:item[1] ) )
+sorted_dict = dict ( sorted( unsorted_dict.items(),key = lambda item:item[1] ) )
 
