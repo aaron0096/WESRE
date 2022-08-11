@@ -1,0 +1,53 @@
+Loops allow a code block to be repeated.
+Py3 supports while, for in range, for in str/list/dict/tuple (iterable), loops.
+
+The range function behaves in a certain way.
+
+range(5) defaults iterates as range(0,5) , which gives 0,1,2,3,4 and does not include the last number.
+
+string splicing also works the same and ignore last index, that if you splice the word aaron[0:5] the result is 'aaro'.
+
+using: << for i in [list/tuple]: >> returns the object itself from the list, whereas one way to overcome this is to use the length function len()
+by wrinting << for i in len(list): \ list[i] >>. Depends on usage, sometimes you require the index of the object then second method is preferable.
+
+Looping makes the coding much more compact and the logic easier to figure out.
+Others will also be able to read and understand the code easier.
+It also prevents a code block from expanding too long, otherwise you will have to copy-paste the same code for all the items that you want to deal with.
+
+
+
+Data structures in py3
+Contains list, set, dictionary, tuples
+
+Lists are collection of ordered objects, first object in starts with index 0.
+Being at 0 lets you count backwards, -1 being last object, -2 second last and so on.
+
+All except tuple can be added to, or edited as a group.
+
+
+
+tuple is similar to lists except they can't be appended or edited
+you will have to delete the tuple and re-create it to make a new tuple with the same name
+tuple is created by << atuple = tuple() >> or << atuple = ('a',) >>
+if you key in << atuple = ('a') >> it will simply become a string. the comma is required.
+
+
+Sets are similar to list but they have no indexing and only allows unique elements.
+The same element can be added to the set but when you print the set it will only appear once.
+
+other functions: 
+remove(elem) Remove element elem from the set. Raises KeyError if elem is not contained in the set.
+discard(elem) Remove element elem from the set if it is present.
+pop() Remove and return an arbitrary element from the set. Raises KeyError if the set is empty.
+
+
+
+dictionary are key:value pairs. they have an index that is declared explicitly by the creator rather than starting from 0 as with lists.
+can think of them as lists but you put your own index. the index (or key) must be unique.
+sorting by keys can be done easier by sending the keys to a list, sorting the list, then iterating into a new dict
+sorting by values are harder...
+dict.item() returns the values in a list, and you have to use the sorted() function as well as lambda function thing as so:
+
+sorted_dict = unsorted_dict ( sorted( unsorted_dict.items(),key = lambda item:item[1] ) )
+
+
