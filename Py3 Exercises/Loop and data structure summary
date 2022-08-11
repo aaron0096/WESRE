@@ -50,4 +50,3 @@ dict.item() returns the values in a list, and you have to use the sorted() funct
 
 sorted_dict = unsorted_dict ( sorted( unsorted_dict.items(),key = lambda item:item[1] ) )
 
-
