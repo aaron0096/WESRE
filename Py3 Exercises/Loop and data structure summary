@@ -50,3 +50,6 @@ dict.item() returns the values in a list, and you have to use the sorted() funct
 
 sorted_dict = dict ( sorted( unsorted_dict.items(),key = lambda item:item[1] ) )
 
+take note that the dict saves the data types respectively, so when doing an IF condition, may return errors if the data types are different.
+also caused a few headaches during the assessment trying to figure out that "" in a list is not a None.
+
