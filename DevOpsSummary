@@ -1,0 +1,27 @@
+Used to be that Developers and Operations team had different characteristics to them.
+Devs want new features, and therefore code them in and accept the risk that things may break.
+Ops want stablility, and would only deploy code which work and know are stable.
+With a difference in goals, the two teams don't really work well with each other.
+
+DevOps tries to marry both, and bridge the communication or goals gap.
+
+
+Two different methods of code development that is relevant are the Waterfall and the Agile methods.
+
+Waterfall involves setting requirements, design, implementation, testing, maintenance
+Each stage only starts after the previous staged has wrapped up.
+So unfortunately, the end-product will only be found out when reaching the 2nd final stage (testing).
+Can result in dissatisfaction when the product doesn't match what the customer wants.
+
+Agile method is used more now compared to waterfall; probably because more good than bad.
+Involves multiple stages where each feature is built one by one by the team, and slowly adds up to make the programme / application.
+Once every stage is done the customer can then ask for slight changes to fit their idea or move on with the next stage if all-ok.
+Supposed to work faster than waterfall because each stage is broken into more managable pieces, as well as that waterfall depends on the previous stage's completeness
+    before moving on; if the previous stage is bad it will cause the further down stages to be bad as well, agile sort of avoids it? by building feature by feature
+
+
+SRE -- Site Reliability Engineers
+The goal is to keep systems running as stable as possible. In a way, the goals align very nicely with operations team.
+Also goal is to make sure when systems fail, to recover as soon as possible.
+
+SRE also stands inbetween Devs and Ops, in a somewhat similar role, and plays well with DevOps side.
