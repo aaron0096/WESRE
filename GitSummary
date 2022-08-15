@@ -1,7 +1,7 @@
 Git is a source code control system
 What it allows is for programmers to work on code collaboratively. 
 And, it provides a changelog for whom did what edits to what files.
-There's also ability to rollback 
+There's also ability to rollback in the event something is broken.
 
 
 Git allows for 'branching'.
@@ -23,8 +23,9 @@ Command is    << git commit -m 'message' >>  or  << git commit >>  and enter vim
     Empty commit message gets failed commit
 If commit is successful, your local files are added to the Remote Repository, and changes to files are merged.
 
-If unsuccessful, could be due to file conflict. Remote Repository is newer than the local repo.
-    Therefore needs to    << git pull >>   to merge remote files with the local files, or
+If unsuccessful, could be due to file conflict. Remote Repository has changes no in the local repo.
+    Therefore needs to    << git pull >>   downloads and merges remote files with the local files, or
                           << git fetch >>   to download new files from remote repo of changes. Does not merge. Fetch is safer because pull may undo your work.
 
 
+https://i.stack.imgur.com/XwVzT.png
