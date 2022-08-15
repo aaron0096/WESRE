@@ -1,5 +1,8 @@
 Git is a source code control system
 What it allows is for programmers to work on code collaboratively. 
+And, it provides a changelog for whom did what edits to what files.
+There's also ability to rollback 
+
 
 Git allows for 'branching'.
 The 'main' branch refers to where all the code and files stay. Also the current files.
@@ -11,5 +14,17 @@ Branching also allows you to pause the current project, and you can move on to w
 You also can have multiple branches at the same time, with each branch working on a different project or area.
 
 
+How the files are worked with:
+Any changes in the files that you want to upload to git must be tracked first.
+Command is to   << git add 'filename' >>  or  << git add . >>   for all files.
+This moves the files to the staging area.
+Next step is to commit the files to github.
+Command is    << git commit -m 'message' >>  or  << git commit >>  and enter vim to do a message
+    Empty commit message gets failed commit
+If commit is successful, your local files are added to the Remote Repository, and changes to files are merged.
+
+If unsuccessful, could be due to file conflict. Remote Repository is newer than the local repo.
+    Therefore needs to    << git pull >>   to merge remote files with the local files, or
+                          << git fetch >>   to download new files from remote repo of changes. Does not merge. Fetch is safer because pull may undo your work.
 
 
