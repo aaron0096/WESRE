@@ -30,3 +30,30 @@ If unsuccessful, could be due to file conflict. Remote Repository has changes no
 
 https://i.stack.imgur.com/XwVzT.png
 Helpful image for git pull, fetch, commit, etc.
+
+
+--- Team exercise ---
+### giving permissions to collaborators
+Go to github, settings, collaborators and then add username, full name, or email.
+Collaborators can push or pull, unless some other settings are set to restrict pushing on the main branch for 'safety' reasons
+
+git clone 'URL' 
+### clones the URL of the github onto local , allows you to work on the files on your computer itself.
+
+git branch <new branch name>
+### creates a new branch, if there's a same name, returns error
+git -d <branch name>
+### deletes the LOCAL copy of the branch, not the remote
+git push origin --delete <branch name>
+### deletes the REMOTE copy of the branch, not the local
+** need to do both local and remote deletion to remove the branch totally
+
+git checkout <branch name>
+### enters the branch for editing.
+git merge <branch name>
+### merges the named branch with the current branch that you're in
+
+### committing changes to main at the same time
+### if someone else has already committed their changes, your commit will fail
+### git requires that you do a    << git pull >>    before you can do a   << git push >>
+
