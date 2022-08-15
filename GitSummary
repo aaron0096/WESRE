@@ -1,2 +1,15 @@
 Git is a source code control system
+What it allows is for programmers to work on code collaboratively. 
+
+Git allows for 'branching'.
+The 'main' branch refers to where all the code and files stay. Also the current files.
+Creating a branch means copying all the files into a seperate area. You can then work on these files in the branch without modifying the main branch.
+Some benefits include that it won't affect the current working copy of the file if there's uncompleted code.
+Once the code is done, then you can merge it onto the main branch, not partially-edited code that can spoil things.
+
+Branching also allows you to pause the current project, and you can move on to working on some other project or hotfixes that crop up.
+You also can have multiple branches at the same time, with each branch working on a different project or area.
+
+
+
 
