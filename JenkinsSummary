@@ -1,5 +1,21 @@
 
 Jenkins is a CI/CD tool, stands for Continuous Integration, Continuous Delivery.
 What it allows is for the code that you have written to be submitted to the online repository at any time, and then the whole code block is tested.
+Any errors will result in the code being sent back to the developer, and then you can do your fixes on the code itself.
 
+Before Jenkins (or CI/CD), the only way was to submit your code at an agreed global timing, and then the whole code block can then be tested.
+Slower because if there is a worldwide team working on the codebase, have to wait until everyone in the world submits, not ideal since different timezones.
+If you can submit at any time, then test the code that you submit, overall the process of producing new code is much faster than before Jenkins.
+
+
+
+Jenkins is a 'dumb' tool, therefore requires you to specify most of the instructions that you want Jenkins to do before Jenkins executes.
+It's highly configurable though, allowing plugins to be installed, which are mostly open-sourced but can also be private tools.
+
+Need plugins first to be based on whatever code that you are doing in.
+i.e. if code written on Python, then install Buildbot, other languages then install other kinds, etc.
+
+The kinds of tests that Jenkins can run include running the code to check if it runs perfectly, and also the style of the code writing.
+(I believe you require a plugin for this as well.. need to download.)
+There's a need to configure the plugin such that it will check for the code style that is specified in it.
 
