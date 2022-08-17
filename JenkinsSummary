@@ -2,6 +2,7 @@
 Jenkins is a CI/CD tool, stands for Continuous Integration, Continuous Delivery.
 What it allows is for the code that you have written to be submitted to the online repository at any time, and then the whole code block is tested.
 Any errors will result in the code being sent back to the developer, and then you can do your fixes on the code itself.
+Once fixed, can resend code, where all the tests will be done again. If pass all the tests, code will move to production side for usage.
 
 Before Jenkins (or CI/CD), the only way was to submit your code at an agreed global timing, and then the whole code block can then be tested.
 Slower because if there is a worldwide team working on the codebase, have to wait until everyone in the world submits, not ideal since different timezones.
