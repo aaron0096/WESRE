@@ -1,1 +1,5 @@
 
+Jenkins is a CI/CD tool, stands for Continuous Integration, Continuous Delivery.
+What it allows is for the code that you have written to be submitted to the online repository at any time, and then the whole code block is tested.
+
+
