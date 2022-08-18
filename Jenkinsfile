@@ -7,9 +7,10 @@ pipeline {
                 echo 'Building'
             }
         }
-        stage('Test') {
+        stage('Test'){
             steps {
-                echo 'Testing'
+                sh 'make check'
+                junit 'reports/**/*.xml' 
             }
         }
         stage('Deploy') {
