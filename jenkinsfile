@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                python3 FizzBuzz.py
+                sh 'python3 FizzBuzz.py'
             }
         }
     }
