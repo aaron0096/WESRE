@@ -1,7 +1,8 @@
 # name = Aaron, date = 10/8/22
 
-units = input("How many fizzing and buzzing units do you need in your life?")
-units = int(units)
+# units = input("How many fizzing and buzzing units do you need in your life?")
+# units = int(units)
+units = 5
 count = 0
 fbcount=0
 
