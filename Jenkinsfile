@@ -12,9 +12,6 @@ pipeline {
                 junit 'test-results.xml'
             }
         }
-
-        junit 'more-test-results.xml'
-
         stage('Ignored') {
             steps {
                 withChecks('Integration Tests') {
