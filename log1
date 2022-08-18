@@ -1,0 +1,27 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Fizzbuzz
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/Fizzbuzz/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/aaron0096/WESRE.git # timeout=10
+Fetching upstream changes from https://github.com/aaron0096/WESRE.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/aaron0096/WESRE.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision b3b98137cd0ace68fa5582cdd41b34a133ccc268 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b3b98137cd0ace68fa5582cdd41b34a133ccc268 # timeout=10
+Commit message: "Update jenkinsfile"
+First time build. Skipping changelog.
+[Fizzbuzz] $ /bin/sh -xe /tmp/jenkins2757688994022304097.sh
++ python3 FizzBuzz.py
+How many fizzing and buzzing units do you need in your life?Traceback (most recent call last):
+  File "/var/lib/jenkins/workspace/Fizzbuzz/FizzBuzz.py", line 3, in <module>
+    units = input("How many fizzing and buzzing units do you need in your life?")
+EOFError: EOF when reading a line
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
