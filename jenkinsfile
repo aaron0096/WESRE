@@ -12,11 +12,6 @@ pipeline {
             steps {
                 echo 'Hello World no.2'
             }
-        }
-        stage('Python 3 test run') {
-            steps {
-                python3 ./FizzBuzz.py
-            }
         }   
     }   
 }
