@@ -14,6 +14,7 @@ pipeline {
                 echo 'Testing'
                 sh 'python3 --version'
                 sh 'python3 FizzBuzz.py'
+                sh 'flake8 --version'
                 sh 'flake8 --statistics FizzBuzz.py'
             }
         }
