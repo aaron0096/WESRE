@@ -8,15 +8,19 @@ pipeline {
             }
         }
         stage('Integration') {
-              junit 'test-results.xml'
+            steps {
+                junit 'test-results.xml'
+            }
         }
 
         junit 'more-test-results.xml'
 
         stage('Ignored') {
-              withChecks('Integration Tests') {
+            steps {
+                withChecks('Integration Tests') {
                 junit 'yet-more-test-results.xml'
-              }
+                }
+            }
         }
         stage('Deploy') {
             steps {
