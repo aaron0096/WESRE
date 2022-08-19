@@ -21,8 +21,8 @@ pipeline {
         stage('Test 2'){
             steps {
                 echo 'Starting test 2'
-                sh "python3 /'Py3 Exercises'/prime_numbers.py"
-                sh "flake8 --statistics /'Py3 Exercises'/prime_numbers.py"
+                sh "python3 'Py3 Exercises'/prime_numbers.py"
+                sh "flake8 --statistics 'Py3 Exercises'/prime_numbers.py"
             }
         }
         stage('Deploy') {
