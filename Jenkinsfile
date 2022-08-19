@@ -29,9 +29,6 @@ pipeline {
             steps {
                 echo 'Deploying'
                 echo 'Placeholder code for deployment to ??? server'
-                for i in 5:
-                    wait 1
-                    echo "Deploying $i seconds"
             }
         }
     }
