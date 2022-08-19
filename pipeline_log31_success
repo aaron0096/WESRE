@@ -1,0 +1,79 @@
+Started by user admin
+Obtained Jenkinsfile from git https://github.com/aaron0096/WESRE.git
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/lib/jenkins/workspace/Pipeline_test
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/Pipeline_test/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/aaron0096/WESRE.git # timeout=10
+Fetching upstream changes from https://github.com/aaron0096/WESRE.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/aaron0096/WESRE.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 2cca497214c51de072ca5004ba37f33ccae5fd8c (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2cca497214c51de072ca5004ba37f33ccae5fd8c # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk d338aa3f0da7edd64ebfe34247993d44184f65b2 # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] echo
+Building
+[Pipeline] echo
+Python 3 generally does not require building? According to online.
+[Pipeline] echo
+Step is skipped to go straight to testing.
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] echo
+Testing
+[Pipeline] sh
++ python3 --version
+Python 3.10.4
+[Pipeline] sh
++ python3 FizzBuzz.py
+fizz buzz
+1
+2
+fizz
+4
+buzz
+fizz
+7
+8
+fizz
+TRADITION!!
+[Pipeline] sh
++ flake8 --version
+4.0.1 (mccabe: 0.6.1, pycodestyle: 2.8.0, pyflakes: 2.4.0) CPython 3.10.4 on
+Linux
+[Pipeline] sh
++ flake8 --statistics FizzBuzz.py
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy)
+[Pipeline] echo
+Deploying
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS

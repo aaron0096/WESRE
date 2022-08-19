@@ -1,0 +1,90 @@
+Started by user admin
+Obtained Jenkinsfile from git https://github.com/aaron0096/WESRE.git
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/lib/jenkins/workspace/Pipeline_test
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/Pipeline_test/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/aaron0096/WESRE.git # timeout=10
+Fetching upstream changes from https://github.com/aaron0096/WESRE.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/aaron0096/WESRE.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 0f3c239a7b1acd8e3d1a4176b39dd2375cf14119 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0f3c239a7b1acd8e3d1a4176b39dd2375cf14119 # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk 6a7af652eac36c528148e0bb3ff438fe8c6e63cb # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] echo
+Building
+[Pipeline] echo
+Python 3 generally does not require building? According to online.
+[Pipeline] echo
+Step is skipped to go straight to testing.
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] echo
+Testing
+[Pipeline] sh
++ python3 --version
+Python 3.10.4
+[Pipeline] sh
++ python3 FizzBuzz.py
+fizz buzz
+1
+2
+fizz
+4
+buzz
+fizz
+7
+8
+fizz
+TRADITION!!
+[Pipeline] sh
++ flake8 --statistics FizzBuzz.py
+FizzBuzz.py:7:8: E225 missing whitespace around operator
+FizzBuzz.py:10:1: W293 blank line contains whitespace
+FizzBuzz.py:11:13: E228 missing whitespace around modulo operator
+FizzBuzz.py:11:30: E228 missing whitespace around modulo operator
+FizzBuzz.py:14:15: E228 missing whitespace around modulo operator
+FizzBuzz.py:17:15: E228 missing whitespace around modulo operator
+FizzBuzz.py:17:20: E225 missing whitespace around operator
+FizzBuzz.py:22:1: W293 blank line contains whitespace
+FizzBuzz.py:24:6: E211 whitespace before '('
+FizzBuzz.py:26:1: E266 too many leading '#' for block comment
+1     E211 whitespace before '('
+2     E225 missing whitespace around operator
+4     E228 missing whitespace around modulo operator
+1     E266 too many leading '#' for block comment
+2     W293 blank line contains whitespace
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy)
+Stage "Deploy" skipped due to earlier failure(s)
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE
