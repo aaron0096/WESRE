@@ -11,11 +11,18 @@ pipeline {
         }
         stage('Test'){
             steps {
-                echo 'Testing'
+                echo 'Starting test 1'
                 sh 'python3 --version'
                 sh 'python3 FizzBuzz.py'
                 sh 'flake8 --version'
                 sh 'flake8 --statistics FizzBuzz.py'
+            }
+        }
+        stage('Test 2'){
+            steps {
+                echo 'Starting test 2'
+                sh 'python3 /'Py3 Exercises'/prime_numbers.py'
+                sh 'flake8 --statistics /'Py3 Exercises'/prime_numbers.py'
             }
         }
         stage('Deploy') {
