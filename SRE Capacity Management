@@ -27,4 +27,4 @@ to run properly. One related problem could be the CrashLoopBackOff problem that 
 
 
 To protect against such failures, there is a need for redundancy. This refers to having excess capacity than your expected traffic such that it can handle, to a limited
-extent, the excess loads. There are also a lot more detailed solutions and potential problems mentioned in the article that is beyond the scope of the summary.
+extent, the excess loads. There are also a lot more detailed solutions and potential problems mentioned in the article that is beyond the scope of this summary.
