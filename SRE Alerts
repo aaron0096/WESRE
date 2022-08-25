@@ -1,0 +1,19 @@
+Reference: https://sre.google/sre-book/practical-alerting/
+
+Alerting requires that you properly set up your system so that it only sends alerts when there is actually a problem.
+For Google, being alerted for a minor issue like a single system failure is unacceptable, as it will be too much noise for the engineers to act on.
+They would rather build their systems to be robust enough such that it can still run with a single system failure.
+
+So, the scale of the company depends on how strict the alert system should be. For smaller companies, a single system failure can be a rather big problem.
+
+For alerts to happen, data is monitored over a certain time period, and when the errors exceed a certain threshold, then an alert is sent.
+Without setting a threshold, an alert may be sent out every single time a minor error happened that could be subsequently fixed (if you provided for it in the code).
+Once again, this will be too much noise, and unactionable or overwhelm your engineers.
+
+Therefore, other rules must be set in place besides a simple threshold monitoring to restrict the noise. Google notes that other such issues can include inhibiting
+certain alerts when others are active, or accumulating the alerts into one label versus showing multiple alerts for the same label.
+
+Then, there is a grading of the alert levels; is it a critical error? Then it should go to the engineers ASAP.
+Is it not that critical? Then it will go to the bugs backlog, to be solved amongst others.
+The really minor ones should not be an alert but rather be an indicator in the monitoring system.
+
