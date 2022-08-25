@@ -74,4 +74,53 @@ Organise your ideas in the priority of which you think most likely.
 
 -----------------------------------------------------------------------------------------------
 
+Ticket 1:
+Analysis side fail, other services working.
+Kubernetes working for the other services
+NoSQL failed to gather market data? ---> for certain tickers, agreed with the monitoring database
+Kubernetes container not processing the inputs ?
+
+Ticket 2:
+Odd issue... ---> agreed with information available in NoSQL database.
+
+Ticket 3:
+Did the disk space fill up? ---> disagreed because there is data up till current time.
+Failure of system past 10am then. Probably nothing to do with the lambda functions as well.
+
+Ticket 4:
+Simple analysis routines I'm going to assume is referring to the AWS lambda services.
+If not working, means AWS lambda down or connection failed.
+'Mainly through' simple analysis routines, means there is also failure in the non-simple analysis routines. ---> Corroborates ticket 1
+
+Microservices:
+Analytic services not finding data == NoSQL not sending the market data over ---> Only for certain tickers (?),
+                                                                                  but working for B-tickers so this may not be true.
+
+Since 9.30am problem started occuring, but users only detect it at 10am onwards.
+
+Dashboard:
+Feed is 'flapping', something is constantly failing and being restarted,
+or perhaps it's an issue of connection error...?
+
+Database:
+Symbol data works for A-F and N-R. Until current time...
+No data for G-M and S-Z.
+
+Recent Releases:
+Lambda functions updated last night to improve performance and reduce run time..... sus. Something broken here.
+
+-------------------------------------------------------------------
+
+Issue 1:
+Lambda services are not working as intended. Since there was no change to code on our side, problem more likely to be from AWS's side.
+
+Issue 2:
+NoSQL database is not correctly gathering data from online stock servers. Some tickers are not receiving any data, others received
+data from start to current time. Unlikely to be a disk usage full issue, probably connection or some other problem.
+Since this is a standalone server
+
+Issue 3:
+
+
+
 
