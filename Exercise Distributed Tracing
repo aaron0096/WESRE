@@ -117,10 +117,13 @@ Lambda services are not working as intended. Since there was no change to code o
 Issue 2:
 NoSQL database is not correctly gathering data from online stock servers. Some tickers are not receiving any data, others received
 data from start to current time. Unlikely to be a disk usage full issue, probably connection or some other problem.
-Since this is a standalone server
+Since this is a standalone server, would not impact kubernetes services in any other way.
 
 Issue 3:
-
+Kubernetes service for analytics is failing. Issue with the container running and staying up, but kubernetes itself is working fine,
+because the master is restarting the service once it fails, causing the 'flapping' to occur.
+Not finding data is an issue that is related to the NoSQL server not being able to capture data.
+However, connection problem can be ruled out because B-tickers are working for some reason.
 
 
 
