@@ -1,0 +1,30 @@
+Reference: https://static.googleusercontent.com/media/sre.google/en//static/pdf/login_winter20_10_torres.pdf
+
+Capacity in general, refers to resources that you have at hand that you can utilize to provide a service to your end-user.
+
+  -- Simple examples can be the number of servers available, the disk space, cpu processing power, etc.
+
+Some principles that are mentioned are that,
+    1. Services must use their resources efficiently
+    2. Services must run reliably
+    3. Service growth must be anticipated
+    
+Point 1 and 2 depends on finding a middle ground for the services to work. You have to give sufficient resources to the services that they can run reliably, but 
+not allocate so much resources that they don't run efficiently. Point 3 refers to potential growth that your service can face. If you are working with physical
+servers, (versus cloud computing) upgrading capacity and incorporating them can take a significant time and expend resources.
+
+In the operations environment, it can be hard to deal with number 3, as it sorts of ties in the previous points. Having more traffic than expected can cause services
+to not run as reliably as well as cause problems, yet you do not want to allocate so much to the services that you have a lot of unused capacity.
+
+
+In the event that capacity runs out, it can cause failure in certain ways, depending on the type of failure.
+
+If the bottleneck lies in the processing power, network speed, or storage throughput, it can cause requests to pile up and form a backlog.
+This is expected to continue to stack up, and will only be resolved once the peak period is over, or the server is restarted to purge the requests.
+
+If the bottleneck is in the storage filling up, running out of RAM capacity, this will cause services to fail in the way of the service crashing and being unable
+to run properly. One related problem could be the CrashLoopBackOff problem that kubernetes faces (among other causes).
+
+
+To protect against such failures, there is a need for redundancy. This refers to having excess capacity than your expected traffic such that it can handle, to a limited
+extent, the excess loads. There are also a lot more detailed solutions and potential problems mentioned in the article that is beyond the scope of the summary.
