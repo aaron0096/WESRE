@@ -1,1 +1,77 @@
+The Architecture
+In this exercise, you will follow the path to the actual issue based on a scenario description from user tickets and monitoring information.
+This is a theoretical exercise, so assumption will be required.
+
+The application is a trading portfolio that allows users to buy and sell stocks and shares as well analyze potential stocks to buy.
+The system also has an automated element that allows users to set parameters to decide whether they should buy or sell stocks that they are interested in.
+
+Architecture diagram.
+The diagram above shows the system architecture for the application, which includes two database server systems: a regular SQL server
+(denoted by M for Master write server in the diagram) and 2 x R disks (replica/read-only servers).
+This is relational information containing user account information and portfolio data of their stocks and shares.
+The Redis cache is used to speed up data retrieval during the queries for things such as user log on and the most common symbol names
+and high-profile user portfolios.
+
+The NoSQL database server is used to gather stock market data so that it can be used for analytical and historical processing by the application.
+
+The microservice layer is hosted on Kubernetes and the components within here perform all the actions such as:
+
+Buying
+Selling
+Analysis to determine if a stock should be bought or sold
+Alerting information to users to inform them about a stock and suggestions of buy, sell or stay
+Verifying user authentication status
+Retrieving portfolio information
+Web front end
+API for mobile apps, IoT devices and 3rd party vendors who use our service
+Containers run on demand
+Information between services is managed via Message Queues (MQ) and there is a service container that defines what service is
+required based on messages on the Message Queue.
+
+Some of the services have been written in serverless architecture (AWS Lambda functions), which are simplistic calculation tools
+for the users, but less frequent and less demanding on resources.
+
+The API gateway directs the calls from mobile, web, and IoT to the load balancer which targets the relevant microservice.
+The API gateway ensures that the user has been authenticated to use the system and has a current and valid token that is passed throughout the system.
+This saves all the services having to check with the authentication service to see if the request is valid.
+The authentication service obtains user information from the regular database servers.
+
+The Tickets
+Ticket 1
+Users have discovered that they are unable to perform analysis on their interested stocks. They are reporting that all other elements of the system are working fine.
+
+Ticket 2
+Users who have reported the initial ticket have since stated that they are able perform analysis on some of their stocks such as BA, BAA, BARC.
+
+Ticket 3
+Those reporting on ticket 1 have also noticed that if they move their time line they are able to perform analysis on stocks up to 10:00am today.
+
+Ticket 4
+There are users that are reporting that they are not able to get any analytics. These are mainly through the simple analysis routines.
+
+
+Monitoring
+Microservices
+The monitoring system is showing that there have been some errors in the logs since 9:30 am today coming from the analytics services.
+The logs have shown issues about not finding data, or simply ending as the container died.
+
+Dashboard
+There is a warning on the dashboard that shows one of the feeds is "flapping" (oscillating between OK and not).
+
+Initial Analysis from Support
+Database
+The NoSQL database contains symbol data for symbols beginning with:
+
+    A - F, N - R
+This is since 9:30 am today until the current time.
+
+Recent Releases
+Checking back through the release calendar shows that there was an update to the Lambda functions last night to improve performance and reduce run time.
+
+-------- Your Task ---------
+Based on these limiting facts and with no access to the system, give your ideas of where you think the issue is and what it might be.
+Organise your ideas in the priority of which you think most likely.
+
+-----------------------------------------------------------------------------------------------
+
 
