@@ -112,7 +112,9 @@ Lambda functions updated last night to improve performance and reduce run time..
 -------------------------------------------------------------------
 
 Issue 1:
-Lambda services are not working as intended. Since there was no change to code on our side, problem more likely to be from AWS's side.
+Lambda services are not working as intended. Release notes does not indicate whether is AWS update or our company updating 
+code on our side. If the latter, means the code has broken down, not enough testing to determine whether the code has been 
+working before deployment to lambda.
 
 Issue 2:
 NoSQL database is not correctly gathering data from online stock servers. Some tickers are not receiving any data, others received
