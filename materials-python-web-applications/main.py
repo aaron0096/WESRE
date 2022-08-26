@@ -1,5 +1,4 @@
-from flask import Flask
-from flask import request
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -32,4 +31,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True)
