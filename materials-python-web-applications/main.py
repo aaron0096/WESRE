@@ -1,5 +1,5 @@
 from flask import Flask, request
-import log
+import logging
 
 app = Flask(__name__)
 
