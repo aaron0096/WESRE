@@ -1,7 +1,9 @@
 from flask import Flask, request
+import log
 
 app = Flask(__name__)
 
+logging.basicConfig(filename="record.log", level=logging.DEBUG)
 
 def fahrenheit_from(celsius):
     """Convert Celsius to Fahrenheit degrees."""
@@ -32,3 +34,9 @@ def index():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
+    app.logger.debug("debug log info")
+    app.logger.info("Info log information")
+    app.logger.warning("Warning log info")
+    app.logger.error("Error log info")
+    app.logger.critical("Critical log info")
+
