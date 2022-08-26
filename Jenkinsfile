@@ -4,8 +4,10 @@ pipeline {
     stages {
         stage('Build environment') {
             steps {
+                sh '''
                 echo 'Building environment'
                 sudo docker pull python
+                '''
             }
         }
         stage('Test'){
