@@ -1,1 +1,37 @@
+What is an incident:
+An unplanned interruption of a service, or reduction in the quality of a service.
+
+It can take the form of:
+Hardware failure, Software updates, Configuration changes, Accidental events, Malicious attacks
+
+Incident Management plan is a structured approach to incident response.
+Prolonged major incident can be costly in terms of revenue and reputation.
+With a process in place, the repair time can be reduced, and also reducing revenue loss.
+Especially important if company is global, then there can be multiple teams with different timezones.
+Need for handoff to another team; need for higher level coordination and communication, and maybe a single point of control at any time.
+
+Plan involves clearly defining a chain of command, provide a systematic procedure to follow, with flexibility to handle unique incidents.
+Clear focus on recovery of the business capabilities, while capturing data for continuous improvement.
+
+For a plan to be effective, use more common terms, reduce acronyms and jargons. If really intend to use, better to provide a glossary section.
+Makes message clearer, and sometimes if the team not same country, maybe will have communication problem.
+
+Recommended for a team, to have a 1:5 ratio for leader:follower.
+Roles would be:
+1. Incident Commander. First to be filled. Overall in charge of delegating tasks for roles 2-5.
+2. Scribe. Records actions and minutes, assists IC. Goal is to capture the information for future reference.
+3. Operations Lead. Works to find out cause of incident. Ensures only Ops team does the fixing. Brings in Subject Matter Experts to assist.
+4. Communications Lead. Works to disseminate information, both internal and external. Tools are social media or chats (discord, slack)
+5. Planning Lead. Capture long-term issues, arranges for handoff. Supports OL and IC.
+
+SMEs are usually on-call, may not normally be involved in operations. Can help with providiing knowledge.
+
+
+Postmoterm
+So the incident is done now.
+Postmortem involves a written report to capture the data of everything important that occurred as a result of the incident.
+
+
+
+
 
