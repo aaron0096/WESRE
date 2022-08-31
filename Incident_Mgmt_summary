@@ -31,6 +31,45 @@ Postmoterm
 So the incident is done now.
 Postmortem involves a written report to capture the data of everything important that occurred as a result of the incident.
 
+From Google's example:
+Postmortem is important to be blameless. If you target people, they may not want to provide information in future incidents.
+Also, the person making the mistake is more likely to want to help others prevent making the same mistake.
+
+Why think of it this way?
+Humans are error-prone. No way for a person to be completely accident free.
+If person A can cause it, so can person B in the future.
+The error, therefore, lies in the system. Fixing the system is more realistic than trying to fix a person.
+
+Possible postmortem structure, taken from Google..
+  Title
+  Date of report
+  Author(s) of report
+  Status of incident
+  Summary description
+  Impact(s)
+  Root cause(s)
+  Trigger
+  Bug tracking
+
+It is important to capture as much details as possible. If statistics can be included for impacts, use it.
+
+For root causes, can be important to write both the high-level description and provide the steps and nuances that causes the problem.
+E.g. that an empty list can cause a no-filter rather than mean work on 'none', that the code is meant to only be run by automation, etc.
+
+How to prevent reoccurences? Many areas that could be targeted. First, could be prevention of such code running, using more 
+checks, or putting a tracker to trigger a warning early if anything causes a problem.
+Or during the fixing phase, what problems were faced? Low bandwidth? Bad protocol delaying fixing? All those are possible to change.
+
+Bug tracking involves creating a ticket to fix the bugs identified under root causes.
+Each bug must have at least 1 person in the team to follow up and ensure it is done satisfactorily.  
+
+The goal of a good postmortem also must be that it can be shared with others outside of the team.
+Jargons need to be put into a glossary so that others can understand what each thing is referred to.
+The timing of the postmortem also should be done ASAP once the incident is resolved and not delay the creation.
+Past a few days, the incident no longer feels as relevant.
+
+
+
 
 
 
