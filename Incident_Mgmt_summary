@@ -70,7 +70,29 @@ Past a few days, the incident no longer feels as relevant.
 
 
 
+Attitudes towards risk. Need to be comfortable with risk. Incidents are bound to occur, so plan for it.
+As systems get more complex, possible for hardware failure.
+Additionally, security attacks can occur. Whether you find out is another issue.
+Databases can get corrupted, and things usually can break during updates.
+
+Alert fatigue is when you are constantly on alert, prepared to do the firefighting.
+If everything is important, nothing is important.
+The alerts tend to get ignored because they turn out to not really be that important.
+Furthermore, person being always on stress can lead to burnout.
+There is a need for monitoring systems to filter out the lower-level alerts, and only ping a perso when it's a high level one.
 
 
 
+Continuous improvement: end goal of postmortem and incident management is so that improve after the incident.
+Reduce toil by automating things, but sometimes not worth it to do automation for it.
+
+Documentations must be updated --- the postmortems, the improved practices, if the incident management did not work, then
+any subsequent changes to the procedures, etc.
+
+Updating SLOs, if systems improve, to raise the bar, if things get complex and slow or unreasonable target, lower bar.
+Important is business meets expectations and customers are satisfied.
+
+Change alerts to remove false positives, include additional information in alert so identifying cause is easier.
+Point to likely resources for faster fix, assign alerts to automate ticket generation, and only those high level important
+alerts are sent for human intervention
 
