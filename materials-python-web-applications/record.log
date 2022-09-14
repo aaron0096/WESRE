@@ -1,0 +1,121 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.31.27.208:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 483-216-237
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:46:22] "GET /?celsius=7000 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:46:25] "GET /?celsius=0 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:46:27] "GET /?celsius=20 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:46:28] "GET /?celsius=0 HTTP/1.1" 200 -
+DEBUG:main:debug log info
+INFO:main:Info log information
+WARNING:main:Warning log info
+ERROR:main:Error log info
+CRITICAL:main:Critical log info
+DEBUG:main:debug log info
+INFO:main:Info log information
+WARNING:main:Warning log info
+ERROR:main:Error log info
+CRITICAL:main:Critical log info
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.31.27.208:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 483-216-237
+DEBUG:main:debug log info
+INFO:main:Info log information
+WARNING:main:Warning log info
+ERROR:main:Error log info
+CRITICAL:main:Critical log info
+DEBUG:main:debug log info
+INFO:main:Info log information
+WARNING:main:Warning log info
+ERROR:main:Error log info
+CRITICAL:main:Critical log info
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.31.27.208:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 483-216-237
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:51:25] "GET /?celsius=0 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:51:27] "GET /?celsius=0 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:51:28] "GET /?celsius=0 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:51:30] "GET /?celsius=7000 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:51:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:51:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:51:48] "GET /?celsius=55 HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:51:58] "GET /?celsius=76 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:52:01] "GET /?celsius= HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:52:01] "GET /?celsius= HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:52:01] "GET /?celsius= HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:52:03] "GET /?celsius=98 HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:52:08] "GET /?celsius=0 HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:52:23] "GET /?celsius=100 HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:52:41] "GET /?celsius=456 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:53:12] "GET /?celsius= HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:53:13] "GET /?celsius= HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:53:13] "GET /?celsius= HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 08:53:13] "GET /?celsius= HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:53:45] "GET /?celsius=234 HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:54:10] "GET /?celsius=100 HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:55:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:55:34] "GET /?celsius=66.7 HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:56:19] "GET /?celsius=23.45 HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:57:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:57:45] "GET /?celsius=33.33 HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:58:15] "GET /?celsius=-45.6 HTTP/1.1" 200 -
+INFO:werkzeug:115.66.127.165 - - [26/Aug/2022 08:58:36] "GET /?celsius=90.7 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.31.27.208:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 145-659-649
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 09:03:47] "GET /?celsius= HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 09:03:48] "GET /?celsius=1 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 09:03:49] "GET /?celsius=2 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 09:03:50] "GET /?celsius=3 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 09:03:50] "GET /?celsius=0 HTTP/1.1" 200 -
+DEBUG:main:debug log info
+INFO:main:Info log information
+WARNING:main:Warning log info
+ERROR:main:Error log info
+CRITICAL:main:Critical log info
+DEBUG:main:debug log info
+INFO:main:Info log information
+WARNING:main:Warning log info
+ERROR:main:Error log info
+CRITICAL:main:Critical log info
+DEBUG:main:debug log info
+INFO:main:Info log information
+WARNING:main:Warning log info
+ERROR:main:Error log info
+CRITICAL:main:Critical log info
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.31.27.208:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:main:debug log info
+INFO:main:Info log information
+WARNING:main:Warning log info
+ERROR:main:Error log info
+CRITICAL:main:Critical log info
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 145-659-649
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 09:05:41] "GET /?celsius=0 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 09:05:42] "GET /?celsius=1 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 09:05:43] "GET /?celsius=2 HTTP/1.1" 200 -
+INFO:werkzeug:218.212.238.113 - - [26/Aug/2022 09:05:43] "GET /?celsius=3 HTTP/1.1" 200 -

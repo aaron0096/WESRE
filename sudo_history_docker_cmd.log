@@ -1,0 +1,252 @@
+    1  whoami
+    2  exit
+    3  sudo -q
+    4  sudo -h
+    5  sudo --
+    6  sudo
+    7  sudo -h
+    8  sudo -l
+    9  sudo -s ubuntu
+   10  sudo --user=ubuntu
+   11  cd
+   12  ls
+   13  cd ..
+   14  ls
+   15  cd
+   16  ls
+   17  pwd
+   18  cd snap
+   19  ls
+   20  cd
+   21  cd ..
+   22  ls
+   23  pwd
+   24  cd root
+   25  ls
+   26  cd
+   27  ls
+   28  cd secrets
+   29  ls
+   30  less master.key
+   31  less initial*
+   32  sudo
+   33  man sudo
+   34  sudo -u
+   35  sudo -u ubuntu
+   36  man sudo
+   37  sudo -U ubuntu
+   38  sudo -s
+   39  exit
+   40  cd secrets
+   41  ls
+   42  cd initial*
+   43  cat initial*
+   44  ls
+   45  cd var
+   46  ls
+   47  cd lib
+   48  ls
+   49  cd jenkins
+   50  ls
+   51  cd secrets
+   52  ls
+   53  cat initial*
+   54  exit
+   55  docker image ls
+   56  docker run -d -p 80:80 docker/getting-started
+   57  docker image inspect cb90
+   58  docker image --help
+   59  docker history cb
+   60  docker
+   61  docker images ls
+   62  docker run -dp 1000:80 docker/getting-started
+   63  docker images ls
+   64  docker ls
+   65  docker images ls
+   66  docker run --help
+   67  docker images ls
+   68  docker images --help
+   69  docker image -a
+   70  docker image -all
+   71  docker images -all
+   72  docker images -a
+   73  docker image --help
+   74  docker image build cb90
+   75  docker image load cb90
+   76  docker image load 
+   77  docker --help
+   78  docker start --help
+   79  docker start cb90
+   80  cd ..
+   81  ls
+   82  cd ..
+   83  ls
+   84  cd lib
+   85  ls
+   86  cd jenkins
+   87  cd ..
+   88  ls
+   89  cd var
+   90  ls
+   91  cd lib
+   92  ls
+   93  cd jenkins
+   94  cd secrets
+   95  ls
+   96  cd initial
+   97  cd initial*
+   98  cat initial
+   99  cat initial*
+  100  pwd
+  101  ls
+  102  sudo visudo -f /etc/sudoers.d/jenkins
+  103  visudo -f /etc/sudoers.d/jenkins
+  104  sudo visudo -f /etc/sudoers.d/jenkins
+  105  visudo -f /etc/sudoers.d/jenkins
+  106  docker images
+  107  docker search
+  108  docker search ubuntu
+  109  docker pull ubuntu
+  110  docker images
+  111  docker run --help
+  112  docker run cb90 1000:80
+  113  docker run cb90 
+  114  docker run -d cb90
+  115  ls
+  116  processes
+  117  df
+  118  ps
+  119  ps -a
+  120  ps --help
+  121  ps -ef
+  122  ps -ef -f
+  123  ps -ef f
+  124  docker images
+  125  docker containers
+  126  docker container
+  127  docker container ls
+  128  docker containers rm 930cfca
+  129  docker container rm 930cfca
+  130  docker container stop 930cfca
+  131  docker container ls
+  132  docker container stop f0d
+  133  docker container ls
+  134  docker image pull nginx
+  135  docker images
+  136  docker container ls
+  137  docker build getting-started 
+  138  docker build -t getting-started 
+  139  docker build -t getting-started . 
+  140  docker images
+  141  docker run nginx 
+  142  docker run -d nginx
+  143  docker containers
+  144  docker container ls
+  145  docker stop 4d4deeee
+  146  docker stop 4d4deee
+  147  docker container ls
+  148  docker run nginx 1010:80
+  149  docker run -d nginx 1010:80
+  150  docker container ls
+  151  docker run -dp nginx 1010:80
+  152  docker container ls
+  153  docker images
+  154  docker run -dp 1010:80 nginx
+  155  docker container ls
+  156  pwd
+  157  ls
+  158  docker container ls
+  159  docker volume create db1
+  160  docker volume inspect db1
+  161  docker container ls
+  162  docker stop ngix 
+  163  docker stop df74
+  164  docker container ls
+  165  docker images
+  166  docker run -dp 1010:80 -v db1:/etc/docker_db1 nginx
+  167  docker container ls
+  168  docker container --help
+  169  docker container inspect 81e
+  170  ls
+  171  cd ..
+  172  ls
+  173  cd ..
+  174  ls
+  175  cd etc
+  176  ls
+  177  cd docker
+  178  ls
+  179  cd ..
+  180  ls
+  181  cd
+  182  ls
+  183  cd ..
+  184  ls
+  185  cd var/lib
+  186  ls
+  187  cd docker/volumes
+  188  ls
+  189  cd db1
+  190  ls
+  191  cd _data
+  192  ls
+  193  cd
+  194  ls
+  195  pwd
+  196  ls
+  197  df
+  198  df -h
+  199  docker container ls
+  200  docker images
+  201  docker scan nginx
+  202  docker image --help
+  203  docker --help
+  204  docker ps
+  205  docker list
+  206  docker build --help
+  207  docker container ls
+  208  docker container ls -a
+  209  docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d nginx
+  210  docker ps
+  211  docker container stop some-nginx
+  212  docker ps
+  213  docker run --name some-nginx -p 1020:80 -v /some/content:/usr/share/nginx/html:ro -d nginx
+  214  docker ps
+  215  docker rm some-nginx
+  216  docker run --name some-nginx -p 1020:80 -v /some/content:/usr/share/nginx/html:ro -d nginx
+  217  docker ps
+  218  docker container stop some-nginx
+  219  docker rm some-nginx
+  220  docker run --help
+  221  ps
+  222  docker images
+  223  docker image prune
+  224  docker iamges
+  225  docker images
+  226  docker container ls
+  227  docker stop 81e 6a2
+  228  docker ps
+  229  docker image ls
+  230  docker image prune
+  231  docker rm b62 b69 df5 cb9
+  232  docker image rm b62 b69 df5 cb9
+  233  docker images
+  234  docker rm -f b69 cb9
+  235  docker image rm -f b69 cb9
+  236  docker images
+  237  clear
+  238  ./activate
+  239  ls
+  240  activate
+  241  exit
+  242  docker images
+  243  ls
+  244  cd ..
+  245  history
+  246  ls
+  247  cd ..
+  248  ls
+  249  cat history > sudo_history_docker_cmd.log
+  250  cat history >> sudo_history_docker_cmd.log
+  251  cat history > sudo_history_docker_cmd.log
+  252  history > sudo_history_docker_cmd.log

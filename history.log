@@ -1,0 +1,1000 @@
+  782  docker image pull 
+  783  docker image pull python
+  784  sudo docker image pull python
+  785  docker image 
+  786  docker image inspect
+  787  docker image ls
+  788  sudo docker image ls
+  789  sudo docker image rm feb
+  790  sudo docker image rm feb -f
+  791  sudo docker image ls
+  792  docker run -d -p 80:80 docker/getting-started
+  793  sudo docker run -d -p 80:80 docker/getting-started
+  794  sudo -s
+  795  ls
+  796  cd SRE
+  797  ls
+  798  cd ..
+  799  ls
+  800  git clone https://github.com/aaron0096/WESRE.git
+  801  ls
+  802  cd sre
+  803  cd SRE
+  804  ls
+  805  cd ..
+  806  rm -r SRE
+  807  ls
+  808  cd logs
+  809  ls
+  810  cd ..
+  811  rm test 
+  812  rm -r logs
+  813  ls
+  814  cd --
+  815  ls
+  816  cd -
+  817  ls
+  818  cat --
+  819  cat -
+  820  cd ..
+  821  ls
+  822  cd
+  823  ls
+  824  cd —
+  825  cat —
+  826  clear
+  827  df
+  828  df -h
+  829  ls
+  830  cd WESRE
+  831  ls
+  832  cd materials*
+  833  ls
+  834  vi main.py
+  835  cat app*
+  836  cat app.yaml
+  837  ls
+  838  vi app.yaml
+  839  cat readme.md
+  840  cat READ*
+  841  ls
+  842  ./main.py
+  843  ls -ltra
+  844  chmod 664 main.py
+  845  ls -ltra
+  846  chmod 664 ./main.py
+  847  ls -ltra
+  848  chmod 774 ./main.py
+  849  ls -ltra
+  850  chmod --help
+  851  man chmod
+  852  clear
+  853  ls
+  854  ./main.py
+  855  python3 main.py
+  856  python3 -m venv venv
+  857  apt install python3.10-venv
+  858  sudo apt install python3.10-venv
+  859  python3 -m venv venv
+  860  source venv/bin/activate
+  861  python3 -m pip install -r requirements.txt
+  862  ls
+  863  python3 main.py
+  864  vi main.py
+  865  python3 main.py
+  866  ls
+  867  man python3
+  868  python3 -h mai
+  869  python3 main.py &
+  870  nohup python3 main.py
+  871  ps
+  872  ps -a
+  873  man ps
+  874  ps -e
+  875  ps -ef
+  876  man ps
+  877  ps -ejh
+  878  ps -e
+  879  kill 2320 2321
+  880  ps -e
+  881  man kill
+  882  ps -ef
+  883  ps -ef
+  884  kill -9 2320 2321
+  885  ps -ef
+  886  nohup python3 main.py 
+  887  ps -ef
+  888  nohup python3 main.py 
+  889  nohup python3 main.py &
+  890  asd
+  891  ls
+  892  cat nohup.out
+  893  time
+  894  now
+  895  timenow
+  896  date
+  897  ps -ef
+  898  kill -9 2400
+  899  ps -ef
+  900  ps -e
+  901  ps -f
+  902  ps -ef user
+  903  ps -ef root
+  904  ps --help s
+  905  ps --help l
+  906  ps --help o
+  907  ps --help t
+  908  ps --help m
+  909  ps --help a
+  910  ls
+  911  venv quit
+  912  ls
+  913  cd WESRE
+  914  ls
+  915  cd mater*
+  916  ls
+  917  cd venv
+  918  ls
+  919  cd bin
+  920  ls
+  921  cd .. 
+  922  cd ..
+  923  ls
+  924  source venv/bin/activate
+  925  man source
+  926  ls
+  927  deactivate
+  928  cd venv
+  929  ls
+  930  cd bin
+  931  ls
+  932  ./activate
+  933  ls -ltra
+  934  source activate
+  935  deactivate
+  936  sudo ./activate
+  937  sudo activate
+  938  ./activate
+  939  ls
+  940  chmod 744 activate
+  941  ls
+  942  ls -ltra
+  943  sudo -s
+  944  ls
+  945  chmod 544 activate
+  946  ls -ltra
+  947  chmod 644 activate
+  948  ls -ltra
+  949  ls
+  950  cd ..
+  951  ls
+  952  source venv/bin/activate
+  953  ./main.py
+  954  python3 main.py
+  955  python3 main.py
+  956  nohup python3 main.py
+  957  ps -ef $$
+  958  kill -9 2047
+  959  kill -9 3047
+  960  ps -ef $$
+  961  nohup python3 main.py
+  962  ps -ef
+  963  python3 main.py
+  964  man nohup
+  965  python3 main.py
+  966  ls
+  967  git add .
+  968  cd ..
+  969  git add .
+  970  git commit
+  971  git push
+  972  unactivate
+  973  deactivate
+  974  ls
+  975  cd mat*
+  976  ls
+  977  git pull
+  978  vi main.py
+  979  vi main2.py
+  980  ls
+  981  source venv/bin/activate
+  982  ls
+  983  python3 main2.py
+  984  ps -ef
+  985  ls
+  986  vi main2.py
+  987  python3 main2.py
+  988  vi main2.py
+  989  python3 main2.py
+  990  ls
+  991  vi main2.py
+  992  python3 main2.py
+  993  vi main2.py
+  994  python3 main2.py
+  995  vi main2.py
+  996  python3 main2.py
+  997  vi main.py
+  998  vi main2.py
+  999  python3 main2.py
+ 1000  vi main2.py
+ 1001  python3 main2.py
+ 1002  vi main2.py
+ 1003  python3 main2.py
+ 1004  vi main2.py
+ 1005  python3 main2.py
+ 1006  vi main2.py
+ 1007  python3 main2.py
+ 1008  vi main2.py
+ 1009  python3 main2.py
+ 1010  vi main.py
+ 1011  python3 main.py
+ 1012  vi main.py
+ 1013  python3 main.py
+ 1014  vi main.py
+ 1015  python3 main.py
+ 1016  vi main.py
+ 1017  python3 main.py
+ 1018  vi main.py
+ 1019  python3 main.py
+ 1020  vi main.py
+ 1021  python3 main.py
+ 1022  vi main.py
+ 1023  python3 main.py
+ 1024  vi main.py
+ 1025  python3 main.py
+ 1026  vi main.py
+ 1027  python3 main.py
+ 1028  ls
+ 1029  nohup.out
+ 1030  cat nohup.out
+ 1031  rm nohup.out
+ 1032  ls
+ 1033  rm main2.py
+ 1034  ls
+ 1035  deactivate
+ 1036  ls
+ 1037  docker images
+ 1038  sudo -s
+ 1039  ls
+ 1040  git pull
+ 1041  cd ..
+ 1042  ls
+ 1043  cd ..
+ 1044  rm -r WESRE
+ 1045  ls
+ 1046  cd WESRE
+ 1047  ls
+ 1048  cd ..
+ 1049  ls
+ 1050  rm -r -f WESRE
+ 1051  ls
+ 1052  git clone [200~https://github.com/aaron0096/WESRE.gi
+ 1053  git clone https://github.com/aaron0096/WESRE.git
+ 1054  ls
+ 1055  cd WESRE
+ 1056  ls
+ 1057  cd mat*
+ 1058  ls
+ 1059  vi main.py
+ 1060  source venv/bin/activate
+ 1061  ls
+ 1062  python3 -m venv venv
+ 1063  ls
+ 1064  source venv/bin/activate
+ 1065  python3 -m pip install -r requirements.txt
+ 1066  ls
+ 1067  python3 main.py
+ 1068  ls
+ 1069  git pull
+ 1070  python3 main.py
+ 1071  ls
+ 1072  cat record.log
+ 1073  nohup python3 main.py 
+ 1074  nohup python3 main.py &
+ 1075  ps -ef
+ 1076  ps -ef
+ 1077  ls
+ 1078  cd WESRE
+ 1079  ls
+ 1080  cd mat*
+ 1081  cat record.log
+ 1082  cd mat*
+ 1083  cat record.log
+ 1084  watch cat record.log
+ 1085  cat record.log
+ 1086  watch less record.log
+ 1087  watch record.log
+ 1088  clear
+ 1089  watch record.log
+ 1090  watch less record.log
+ 1091  watch diff record.log
+ 1092  vi record.log
+ 1093  ls
+ 1094  cat nohup.out
+ 1095  cat record.log
+ 1096  cat diff record.log
+ 1097  cat record.log
+ 1098  watch cat record.log
+ 1099  watch date
+ 1100  watch cat record.log
+ 1101  cat record.log
+ 1102  watch tail record.log
+ 1103  ps -ef
+ 1104  kill -9 4085
+ 1105  ls
+ 1106  ls
+ 1107  python3 
+ 1108  python3 pip -r requirements.txt
+ 1109  python3 install pip -r requirements.txt
+ 1110  python3 -m pip install -r requirements.txt
+ 1111  source venv/bin/activate
+ 1112  python3 main.py
+ 1113  ps -ef
+ 1114  kill -9 4096'
+ 1115  kill -9 4086
+ 1116  ps -ef
+ 1117  ps -ef | tail 20
+ 1118  tail 20 | ps -ef
+ 1119  ps -ef | less
+ 1120  ps -ef | tail
+ 1121  ps -ef | tail 20
+ 1122  ps -ef | tail -20
+ 1123  ps -ef | tail -50
+ 1124  ps -ef | tail -5
+ 1125  clear
+ 1126  ps -ef | tail -5
+ 1127  ls
+ 1128  python3 main.py
+ 1129  cat record.log
+ 1130  clear
+ 1131  cat record.log
+ 1132  clear
+ 1133  ls
+ 1134  git pull
+ 1135  python3 main.py
+ 1136  ls
+ 1137  cat record.log
+ 1138  ls
+ 1139  docker images
+ 1140  sudo docker images
+ 1141  man docker
+ 1142  docker containers
+ 1143  docker container
+ 1144  docker container -a
+ 1145  docker container ls
+ 1146  sudo docker container ls
+ 1147  sudo docker container --help
+ 1148  ls
+ 1149  sudo -s
+ 1150  ls
+ 1151  deactivate
+ 1152  ls
+ 1153  cd ..
+ 1154  ls
+ 1155  cd testdocker
+ 1156  ls
+ 1157  cat server.py
+ 1158  vi requirements.txt
+ 1159  ls
+ 1160  vi requirements.txt
+ 1161  ls
+ 1162  cd WESRE
+ 1163  ls
+ 1164  cd testdocker
+ 1165  ls
+ 1166  vi requirements.txt
+ 1167  ls
+ 1168  vi
+ 1169  ls
+ 1170  sudo -s
+ 1171  ls
+ 1172  cd WESRE
+ 1173  ls
+ 1174  cd Py3D*
+ 1175  ls
+ 1176  ls -ltra
+ 1177  ls
+ 1178  cd ..
+ 1179  ls
+ 1180  cd Py3D*
+ 1181  ls
+ 1182  git pull
+ 1183  git add .
+ 1184  cd ..
+ 1185  ls
+ 1186  git clone https://github.com/aaron0096/Py3Docker.git
+ 1187  ls
+ 1188  cd WESRE
+ 1189  ls
+ 1190  rm -r Py3Docker
+ 1191  rm -rf Py3Docker
+ 1192  ls
+ 1193  cd ..
+ 1194  ls
+ 1195  cd Py3*
+ 1196  ls
+ 1197  cat Dockerfile
+ 1198  ls
+ 1199  docker images
+ 1200  sudo -s
+ 1201  wget https://github.com/prometheus/prometheus.git
+ 1202  ls
+ 1203  cat prometheus.git
+ 1204  clear
+ 1205  wget https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz
+ 1206  ls
+ 1207  rm prometheus.git
+ 1208  tar -xvzf prometheur-2.38.0.linux-amd64.tar.gz
+ 1209  ls
+ 1210  tar -xvzf prometheus-2.38.0.linux-amd64.tar.gz
+ 1211  df
+ 1212  df -h
+ 1213  docker images
+ 1214  sudo -s
+ 1215  cd
+ 1216  ls
+ 1217  sudo cp prometheus-2.38.0.linux-amd64/consoles/ /etc/prometheus/
+ 1218  sudo cp -r prometheus-2.38.0.linux-amd64/consoles/ /etc/prometheus/
+ 1219  ls
+ 1220  cd 
+ 1221  ls
+ 1222  cd ..
+ 1223  ls
+ 1224  cd
+ 1225  ls
+ 1226  cd /etc/prometheus
+ 1227  ls
+ 1228  sudo rm -rf prometheus-2.38.0.linux-amd64
+ 1229  ls
+ 1230  cd
+ 1231  ls
+ 1232  cd prom*
+ 1233  cd prometheus-2.38.0.linux-amd64
+ 1234  ls
+ 1235  cd /etc/prometheus
+ 1236  ls
+ 1237  cd 
+ 1238  ls
+ 1239  history
+ 1240  man history
+ 1241  ls -lt
+ 1242  ls -lta
+ 1243  cd ~/.history
+ 1244  cat /.history
+ 1245  cd ~/.history
+ 1246  ls
+ 1247  cd ..
+ 1248  ls
+ 1249  ls -ltra
+ 1250  cd ..
+ 1251  ls
+ 1252  cd root
+ 1253  ls
+ 1254  sudo cd root
+ 1255  sudo -s
+ 1256  cd 
+ 1257  ls
+ 1258  rm -r prom*
+ 1259  ls
+ 1260  less —
+ 1261  ls
+ 1262  cd /etc/prometheus
+ 1263  ls
+ 1264  sudo -s
+ 1265  cd /etc/prometheus/
+ 1266  ls
+ 1267  less prometheus.yml 
+ 1268  systemctl status prometheus.service 
+ 1269  sudo chown -R 775 /etc/prometheus/ /var/lib/prometheus
+ 1270  sudo systemctl daemon-reload
+ 1271  sudo systemctl restart prometheus
+ 1272  sudo systemctl status prometheus
+ 1273  sudo chown -R prometheus:prometheus /etc/prometheus/ /var/lib/prometheus
+ 1274  sudo systemctl daemon-reload
+ 1275  q
+ 1276  sudo systemctl daemon-reload
+ 1277  sudo systemctl restart prometheus
+ 1278  sudo systemctl status prometheus
+ 1279  clear
+ 1280  sudo systemctl status prometheus
+ 1281  sudo systemctl status prometheus | less
+ 1282  cd
+ 1283  ls
+ 1284  wget https://github.com/prometheus/node_exporter/releases/download/v1.4.0-rc.0/node_exporter-1.4.0-rc.0.linux-amd64.tar.gz
+ 1285  df -h
+ 1286  ls
+ 1287  man tar
+ 1288  tar -xcvf node_exporter-*
+ 1289  tar -xvzf node_exporter-*
+ 1290  ls
+ 1291  rm node_exporter-1.4.0-rc.0.linux-amd64.tar.gz 
+ 1292  ls
+ 1293  cat node_exporter-1.4.0-rc.0.linux-amd64/
+ 1294  cd node_exporter-1.4.0-rc.0.linux-amd64/
+ 1295  ls
+ 1296  sudo vi /etc/systemd/system/node_exporter.service
+ 1297  ls
+ 1298  cd ..
+ 1299  sudo cp node_exporter-1.4.0-rc.0.linux-amd64/node_exporter /usr/local/bin
+ 1300  ls
+ 1301  rm -r node_exporter-1.4.0-rc.0.linux-amd64/
+ 1302  ls
+ 1303  sudo useradd --no-create-home --shell /bin/false node_exporter
+ 1304  sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
+ 1305  sudo systemctl daemon-reload
+ 1306  sudo systemctl start node_exporter
+ 1307  systemctl status node_exporter.service 
+ 1308  man wget
+ 1309  df -h
+ 1310  sudo apt-get install -y apt-transport-https
+ 1311  sudo apt-get install -y software-properties-common wget
+ 1312  sudo wget -q -O /usr/share/keyrings/grafana.key https://packages.grafana.com/gpg.key
+ 1313  echo "deb [signed-by=/usr/share/keyrings/grafana.key] https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+ 1314  sudo apt-get update
+ 1315  sudo apt-get install grafana-enterprise
+ 1316  df -h
+ 1317  sudo systemctl daemon-reload
+ 1318  sudo systemctl start grafana-server
+ 1319  sudo systemctl status grafana-server
+ 1320  sudo systemctl enable graf
+ 1321  clear
+ 1322  sudo systemctl status grafana-server
+ 1323  clear
+ 1324  df -h
+ 1325  ps -a
+ 1326  ps -la
+ 1327  ps -lta
+ 1328  ps s
+ 1329  ps --help s
+ 1330  ps --help a
+ 1331  ps -A
+ 1332  ps -le
+ 1333  cd $WORKING_DIR/conf/defaults.ini
+ 1334  ls
+ 1335  cd ..
+ 1336  ls
+ 1337  cd /etc/lib
+ 1338  cd etc/lib
+ 1339  cd /etc
+ 1340  ls
+ 1341  cd grafana/
+ 1342  ls
+ 1343  cat grafana.ini 
+ 1344  sudo cat grafana.ini 
+ 1345  sudo vi grafana.ini 
+ 1346  resize
+ 1347  test
+ 1348  systemctl start graphana
+ 1349  sudo -s
+ 1350  sudo systemctl status grafana-server.service 
+ 1351  cd /etc/prometheus/
+ 1352  ls
+ 1353  cat prometheus.yml 
+ 1354  ps -lta
+ 1355  ps -le
+ 1356  systemctl status grafana-server.service 
+ 1357  systemctyl status promethus
+ 1358  systemctl status prometheus.service 
+ 1359  systemctl status jenkins.service 
+ 1360  systemctl status prometheus.service 
+ 1361  systemctl status node_exporter.service 
+ 1362  systemctl start node_exporter.service 
+ 1363  sudo systemctl start node_exporter.service 
+ 1364  systemctl status node_exporter.service 
+ 1365  ls
+ 1366  cd ..
+ 1367  ls
+ 1368  cd ..
+ 1369  ls
+ 1370  cd etc
+ 1371  ls
+ 1372  cd ..
+ 1373  ls
+ 1374  cd var
+ 1375  ls
+ 1376  cd lib
+ 1377  ls
+ 1378  cd prometheus/
+ 1379  ls
+ 1380  cd ..
+ 1381  ls
+ 1382  cd usr
+ 1383  ls
+ 1384  cd lib
+ 1385  ls
+ 1386  cd ..
+ 1387  ls
+ 1388  cd bin
+ 1389  ls
+ 1390  ls ..
+ 1391  ls
+ 1392  cd ..
+ 1393  ls
+ 1394  ls lib
+ 1395  cd ..
+ 1396  ls
+ 1397  cd var
+ 1398  ls
+ 1399  cd lib
+ 1400  ls
+ 1401  cd prometheus/
+ 1402  ls
+ 1403  cd
+ 1404  ls
+ 1405  cd ..
+ 1406  ls
+ 1407  cd bin
+ 1408  ls
+ 1409  ls ..
+ 1410  ls
+ 1411  cd ..
+ 1412  ls
+ 1413  cd ..
+ 1414  ls
+ 1415  cd etc
+ 1416  ls
+ 1417  cd ..
+ 1418  ls
+ 1419  systemctl status prometheus.service 
+ 1420  cd /usr/local/bin
+ 1421  ls
+ 1422  cd prometheus
+ 1423  cat prometheus 
+ 1424  ls
+ 1425  cd Py3Docker/
+ 1426  ls
+ 1427  cat record.log 
+ 1428  ls
+ 1429  cd
+ 1430  ls
+ 1431  cd /
+ 1432  ls
+ 1433  ls -lt
+ 1434  cd etc/prometheus/
+ 1435  ls
+ 1436  sudo vi prometheus.yml 
+ 1437  ls
+ 1438  cd
+ 1439  ls
+ 1440  cat nohup.out 
+ 1441  rm nohup.out 
+ 1442  ls
+ 1443  cat /opt/grok-exporter/config.yml 
+ 1444  sudo vi /opt/grok-exporter/config.yml 
+ 1445  sudo systemctl stop grok-exporter.service 
+ 1446  sudo systemctl status grok-exporter.service 
+ 1447  sudo vi /opt/grok-exporter/config.yml 
+ 1448  sudo systemctl start grok-exporter.service 
+ 1449  sudo systemctl status grok-exporter.service 
+ 1450  sudo systemctl restart prometheus.service 
+ 1451  ls
+ 1452  cat Py3Docker/record.log 
+ 1453  vi Py3Docker/record.log 
+ 1454  sudo vi Py3Docker/record.log 
+ 1455  ps -a
+ 1456  ps -la
+ 1457  ps -lta
+ 1458  ps -le
+ 1459  ps -pid
+ 1460  kill -f 3310
+ 1461  kill 3310
+ 1462  sudo kill 3310
+ 1463  ps -pid
+ 1464  ps -a
+ 1465  ps -le
+ 1466  ls
+ 1467  cat Py3Docker/record.log 
+ 1468  sudo vi Py3Docker/record.log 
+ 1469  ls
+ 1470  cd Py3Docker/
+ 1471  ls
+ 1472  source venv/bin/activate
+ 1473  python3 c_to_f.py 
+ 1474  sudo python3 c_to_f.py 
+ 1475  sudo nohup python3 c_to_f.py &
+ 1476  ls -ls
+ 1477  ls -lsh
+ 1478  systemctl status prometheus.service 
+ 1479  cd etc
+ 1480  ls
+ 1481  cd /etc
+ 1482  ls
+ 1483  cd prometheus/
+ 1484  ls
+ 1485  cat prometheus.yml 
+ 1486  ls
+ 1487  vi prometheus.yml 
+ 1488  ls -ltra
+ 1489  chmod 664 prometheus.yml 
+ 1490  sudo chmod 664 prometheus.yml 
+ 1491  ls -ltra
+ 1492  vi prometheus.yml 
+ 1493  sudo chmod 666 prometheus.yml 
+ 1494  vi prometheus.yml 
+ 1495  sudo systemctl daemon-reload
+ 1496  sudo systemctl restart prometheus.service 
+ 1497  sudo systemctl status prometheus.service 
+ 1498  vi prometheus.yml 
+ 1499  sudo systemctl restart prometheus.service 
+ 1500  sudo systemctl status prometheus.service 
+ 1501  cd
+ 1502  ls
+ 1503  cd WESRE
+ 1504  ls
+ 1505  cat log_py3 
+ 1506  ls
+ 1507  cd ..
+ 1508  cd
+ 1509  ls
+ 1510  wget https://github.com/fstab/grok_exporter/releases/download/v1.0.0.RC5/grok_exporter-1.0.0.RC5.linux-amd64.zip
+ 1511  ls
+ 1512  tar -xvf grok_
+ 1513  tar -xvf grok_*
+ 1514  tar -xcvf grok_*
+ 1515  tar -xvzf grok_*
+ 1516  tar -xzf grok_*
+ 1517  man tar
+ 1518  tar -xzf grok_exporter-1.0.0.RC5.linux-amd64.zip
+ 1519  tar -xf grok_exporter-1.0.0.RC5.linux-amd64.zip
+ 1520  tar -xz grok_exporter-1.0.0.RC5.linux-amd64.zip
+ 1521  tar -xzf grok_exporter-1.0.0.RC5.linux-amd64.zip
+ 1522  tar -xgzf grok_exporter-1.0.0.RC5.linux-amd64.zip
+ 1523  tar -xgz -f grok_exporter-1.0.0.RC5.linux-amd64.zip
+ 1524  sudo apt install unzip
+ 1525  ls
+ 1526  unzip grok_exporter-1.0.0.RC5.linux-amd64.zip 
+ 1527  ls
+ 1528  rm grok_exporter-1.0.0.RC5.linux-amd64.zip 
+ 1529  ls
+ 1530  cd grok_exporter-1.0.0.RC5.linux-amd64/
+ 1531  ls
+ 1532  cd /opt
+ 1533  ls
+ 1534  cd
+ 1535  ls
+ 1536  mv grok_exporter-1.0.0.RC5.linux-amd64/ grok-exporter
+ 1537  ls
+ 1538  mv grok-exporter/ /opt/
+ 1539  sudo mv grok-exporter/ /opt/
+ 1540  cd opt
+ 1541  cd /opt
+ 1542  ls
+ 1543  cd
+ 1544  ls
+ 1545  cd
+ 1546  cd /opt
+ 1547  ls
+ 1548  sudo nano /opt/grok-exporter/grok-exporter.service
+ 1549  sudo ln -s /opt/grok-exporter/grok-exporter.service /etc/systemd/system/grok-exporter.service
+ 1550  sudo cp -v /opt/grok-exporter/example/config.yml /opt/grok-exporter/
+ 1551  ls
+ 1552  cd grok-exporter/
+ 1553  ls
+ 1554  vi config.yml 
+ 1555  systemctl daemon-re
+ 1556  sudo systemctl daemon-reload 
+ 1557  sudo systemctl start grok-exporter.service 
+ 1558  sudo systemctl status grok-exporter.service 
+ 1559  ls
+ 1560  vi config.yml 
+ 1561  sudo vi config.yml 
+ 1562  cd 
+ 1563  ls
+ 1564  cd WESRE/Py3Docker/
+ 1565  ls
+ 1566  vi newapp.py 
+ 1567  vi c_to_f.py 
+ 1568  nohup python3 c_to_f.py &
+ 1569  ps -a
+ 1570  nohup python3 c_to_f.py &
+ 1571  ps -
+ 1572  nohup python3 c_to_f.py &&
+ 1573  ps -a
+ 1574  ps -la
+ 1575  ps -lta
+ 1576  ps -lra
+ 1577  ps -le
+ 1578  ps 
+ 1579  ps -a
+ 1580  ps -e
+ 1581  ps -let
+ 1582  clear
+ 1583  nohup python3 c_to_f.py &
+ 1584  man nohup
+ 1585  ls
+ 1586  nohup python3 c_to_f.py &
+ 1587  python3 c_to_f.py 
+ 1588  source venv/bin/activate
+ 1589  nohup python3 c_to_f.py &
+ 1590  python3 c_to_f.py &
+ 1591  vi c_to_f.py 
+ 1592  sudo vi c_
+ 1593  sudo vi c_to_f.py 
+ 1594  ls
+ 1595  cd ..
+ 1596  ls
+ 1597  cd Py3Docker/
+ 1598  ls
+ 1599  ls -a
+ 1600  git pull
+ 1601  cd ..
+ 1602  ls
+ 1603  cd Py3Docker/
+ 1604  ls
+ 1605  git pull
+ 1606  cd ..
+ 1607  ls
+ 1608  rm -r Py3Docker/
+ 1609  rm -rf Py3Docker/
+ 1610  ls
+ 1611  deactivate
+ 1612  ls
+ 1613  rm -rf Py3Docker/
+ 1614  ls
+ 1615  sudo rm -rf Py3Docker/
+ 1616  ls
+ 1617  cd ..
+ 1618  ls
+ 1619  cd Py3Docker/
+ 1620  ls
+ 1621  cat c_to_f.py 
+ 1622  ls
+ 1623  git pull
+ 1624  sudo git pull
+ 1625  ls
+ 1626  source venv/bin/activate
+ 1627  nohup python3 c_to_f.py &
+ 1628  python3 c_to_f.py 
+ 1629  pip install flask
+ 1630  python3 c_to_f.py 
+ 1631  ls -ltra
+ 1632  sudo python3 c_to_f.py 
+ 1633  pip install flask
+ 1634  sudo python3 c_to_f.py 
+ 1635  ls
+ 1636  pip install Flask
+ 1637  python -m flask --version
+ 1638  python33 -m flask --version
+ 1639  python3 -m flask --version
+ 1640  ls
+ 1641  sudo -s
+ 1642  ls
+ 1643  deact
+ 1644  deactivate 
+ 1645  ls
+ 1646  pwd
+ 1647  cd /opt/grok-exporter/
+ 1648  ls
+ 1649  vi config.yml 
+ 1650  suvo vi config.yml 
+ 1651  sudo vi config.yml 
+ 1652  ls
+ 1653  sudo systemctl restart grok-exporter.service 
+ 1654  sudo vi config.yml 
+ 1655  cat ~/Py3Docker/record.log 
+ 1656  vi ~/Py3Docker/record.log 
+ 1657  cat ~/Py3Docker/c_to_f.py 
+ 1658  sudo vi config.yml 
+ 1659  cat ~/Py3Docker/c_to_f.py 
+ 1660  sudo vi config.yml 
+ 1661  ls
+ 1662  cd example/
+ 1663  ls
+ 1664  cd ..
+ 1665  ls
+ 1666  cat config.yml 
+ 1667  ls
+ 1668  sudo systemctl status grok-exporter.service 
+ 1669  sudo systemctl start grok-exporter.service 
+ 1670  sudo systemctl status grok-exporter.service 
+ 1671  sudo systemctl restart grok-exporter.service 
+ 1672  sudo systemctl daemon-restart
+ 1673  sudo systemctl restart-daemon
+ 1674  sudo systemctl daemon-re
+ 1675  sudo systemctl daemon-res
+ 1676  sudo systemctl daemon-restar
+ 1677  man systemctl
+ 1678  sudo systemctl daemon-reload 
+ 1679  sudo systemctl restart grok-exporter.service 
+ 1680  sudo systemctl status grok-exporter.service 
+ 1681  sudo systemctl restart prometheus.service 
+ 1682  sudo systemctl status prometheus.service 
+ 1683  systemctl status grok-exporter.service 
+ 1684  ls
+ 1685  cd
+ 1686  ls
+ 1687  cd Py3Docker/
+ 1688  ls
+ 1689  cat record
+ 1690  cat record.log 
+ 1691  pwd
+ 1692  ls
+ 1693  sudo vi /opt/grok-exporter/config.yml 
+ 1694  cd
+ 1695  ls
+ 1696  cat Py3Docker/record.log 
+ 1697  sudo vi /opt/grok-exporter/config.yml 
+ 1698  sudo systemctl restart grok-exporter.service 
+ 1699  sudo systemctl restart prometheus.service 
+ 1700  sudo vi /opt/grok-exporter/config.yml 
+ 1701  cat /opt/grok-exporter/patterns/grok-patterns 
+ 1702  less /opt/grok-exporter/patterns/grok-patterns 
+ 1703  sudo systemctl restart grok-exporter.service 
+ 1704  sudo systemctl restart prometheus.service 
+ 1705  sudo vi /opt/grok-exporter/config.yml 
+ 1706  sudo systemctl restart grok-exporter.service 
+ 1707  sudo systemctl restart prometheus.service 
+ 1708  ls
+ 1709  cat /opt/grok-exporter/config.yml 
+ 1710  cd
+ 1711  cd /op
+ 1712  cd /opt/
+ 1713  ls
+ 1714  ls -ltra
+ 1715  ls -la
+ 1716  ls -lta
+ 1717  ls -lt
+ 1718  ls -ltra
+ 1719  df
+ 1720  df /opt/
+ 1721  df /opt/grok-exporter/
+ 1722  df -h /opt/grok-exporter/
+ 1723  df -h ./opt/grok-exporter/
+ 1724  df -h /opt/grok-exporter/
+ 1725  ls
+ 1726  cd grok-exporter/
+ 1727  ls -lta
+ 1728  man df
+ 1729  ls -ls
+ 1730  ls -lsh
+ 1731  ls -lsh | head 1
+ 1732  ls -lsh | tail 1
+ 1733  ls -lsh | tail -1
+ 1734  ls -lsh | head -1
+ 1735  ls
+ 1736  cd ..
+ 1737  ls
+ 1738  cp grok-exporter/ /home/ubuntu/Py3Docker/
+ 1739  cp -r grok-exporter/ /home/ubuntu/Py3Docker/
+ 1740  ls
+ 1741  cd 
+ 1742  cd ~/Py3Docker/
+ 1743  ls
+ 1744  git add .
+ 1745  sudo
+ 1746  sudo -s
+ 1747  systemctl status grok-exporter.service 
+ 1748  systemctl start grok-exporter.service 
+ 1749  sudo systemctl start grok-exporter.service 
+ 1750  systemctl status grok-exporter.service 
+ 1751  curl http://fastwebhost.in
+ 1752  man curl
+ 1753  curl -o san.html fastwebhost.in/san.html​
+ 1754  ls
+ 1755  curl -o san.html fastwebhost.in/san.html​
+ 1756  ls
+ 1757  cat san.html
+ 1758  vi san.html
+ 1759  rm san.html 
+ 1760  sudo curl http://fastwebhost.in
+ 1761  curl https://localhost
+ 1762  curl http://localhost
+ 1763  curl http://localhost:8080
+ 1764  curl google.com
+ 1765  curl fastwebhost.in
+ 1766  curl google.com
+ 1767  curl http://www.google.com
+ 1768  curl http://www.google.com | less
+ 1769  curl http://yahoo.com | less
+ 1770  curl http://yahoo.com 
+ 1771  curl http://yahoo.com | less
+ 1772  curl http://yahoo.com 
+ 1773  curl http://www.yahoo.com 
+ 1774  curl https://sg.yahoo.com/?p=us&guccounter=1
+ 1775  clear
+ 1776  apt upgrade
+ 1777  history
+ 1778  ls
+ 1779  cd WESRE
+ 1780  ls
+ 1781  history > history.log
