@@ -1,0 +1,98 @@
+What is an incident:
+An unplanned interruption of a service, or reduction in the quality of a service.
+
+It can take the form of:
+Hardware failure, Software updates, Configuration changes, Accidental events, Malicious attacks
+
+Incident Management plan is a structured approach to incident response.
+Prolonged major incident can be costly in terms of revenue and reputation.
+With a process in place, the repair time can be reduced, and also reducing revenue loss.
+Especially important if company is global, then there can be multiple teams with different timezones.
+Need for handoff to another team; need for higher level coordination and communication, and maybe a single point of control at any time.
+
+Plan involves clearly defining a chain of command, provide a systematic procedure to follow, with flexibility to handle unique incidents.
+Clear focus on recovery of the business capabilities, while capturing data for continuous improvement.
+
+For a plan to be effective, use more common terms, reduce acronyms and jargons. If really intend to use, better to provide a glossary section.
+Makes message clearer, and sometimes if the team not same country, maybe will have communication problem.
+
+Recommended for a team, to have a 1:5 ratio for leader:follower.
+Roles would be:
+1. Incident Commander. First to be filled. Overall in charge of delegating tasks for roles 2-5.
+2. Scribe. Records actions and minutes, assists IC. Goal is to capture the information for future reference.
+3. Operations Lead. Works to find out cause of incident. Ensures only Ops team does the fixing. Brings in Subject Matter Experts to assist.
+4. Communications Lead. Works to disseminate information, both internal and external. Tools are social media or chats (discord, slack)
+5. Planning Lead. Capture long-term issues, arranges for handoff. Supports OL and IC.
+
+SMEs are usually on-call, may not normally be involved in operations. Can help with providiing knowledge.
+
+
+Postmoterm
+So the incident is done now.
+Postmortem involves a written report to capture the data of everything important that occurred as a result of the incident.
+
+From Google's example:
+Postmortem is important to be blameless. If you target people, they may not want to provide information in future incidents.
+Also, the person making the mistake is more likely to want to help others prevent making the same mistake.
+
+Why think of it this way?
+Humans are error-prone. No way for a person to be completely accident free.
+If person A can cause it, so can person B in the future.
+The error, therefore, lies in the system. Fixing the system is more realistic than trying to fix a person.
+
+Possible postmortem structure, taken from Google..
+  Title
+  Date of report
+  Author(s) of report
+  Status of incident
+  Summary description
+  Impact(s)
+  Root cause(s)
+  Trigger
+  Bug tracking
+
+It is important to capture as much details as possible. If statistics can be included for impacts, use it.
+
+For root causes, can be important to write both the high-level description and provide the steps and nuances that causes the problem.
+E.g. that an empty list can cause a no-filter rather than mean work on 'none', that the code is meant to only be run by automation, etc.
+
+How to prevent reoccurences? Many areas that could be targeted. First, could be prevention of such code running, using more 
+checks, or putting a tracker to trigger a warning early if anything causes a problem.
+Or during the fixing phase, what problems were faced? Low bandwidth? Bad protocol delaying fixing? All those are possible to change.
+
+Bug tracking involves creating a ticket to fix the bugs identified under root causes.
+Each bug must have at least 1 person in the team to follow up and ensure it is done satisfactorily.  
+
+The goal of a good postmortem also must be that it can be shared with others outside of the team.
+Jargons need to be put into a glossary so that others can understand what each thing is referred to.
+The timing of the postmortem also should be done ASAP once the incident is resolved and not delay the creation.
+Past a few days, the incident no longer feels as relevant.
+
+
+
+Attitudes towards risk. Need to be comfortable with risk. Incidents are bound to occur, so plan for it.
+As systems get more complex, possible for hardware failure.
+Additionally, security attacks can occur. Whether you find out is another issue.
+Databases can get corrupted, and things usually can break during updates.
+
+Alert fatigue is when you are constantly on alert, prepared to do the firefighting.
+If everything is important, nothing is important.
+The alerts tend to get ignored because they turn out to not really be that important.
+Furthermore, person being always on stress can lead to burnout.
+There is a need for monitoring systems to filter out the lower-level alerts, and only ping a perso when it's a high level one.
+
+
+
+Continuous improvement: end goal of postmortem and incident management is so that improve after the incident.
+Reduce toil by automating things, but sometimes not worth it to do automation for it.
+
+Documentations must be updated --- the postmortems, the improved practices, if the incident management did not work, then
+any subsequent changes to the procedures, etc.
+
+Updating SLOs, if systems improve, to raise the bar, if things get complex and slow or unreasonable target, lower bar.
+Important is business meets expectations and customers are satisfied.
+
+Change alerts to remove false positives, include additional information in alert so identifying cause is easier.
+Point to likely resources for faster fix, assign alerts to automate ticket generation, and only those high level important
+alerts are sent for human intervention
+
